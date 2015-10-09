@@ -7,9 +7,9 @@
 Language file:			English
 Created by:				SoluteDNS
 
-Version:				0.2.0
-Date:					31-08-2015
-Distribution Package:	15200
+Version:				0.2.1
+Date:					10-10-2015
+Distribution Package:	15201
 
 Copyright (C) NetDistrict 2015
 All Rights Reserved
@@ -176,6 +176,7 @@ $_ADDONLANG['admin_menu_handling'] = "Handling";
 $_ADDONLANG['admin_menu_nameservers'] = "Nameservers";
 $_ADDONLANG['admin_menu_system'] = "System";
 $_ADDONLANG['admin_menu_tools'] = "Tools";
+$_ADDONLANG['admin_menu_accesscontrol'] = "Access Control";
 $_ADDONLANG['admin_menu_logs'] = "Logs";
 $_ADDONLANG['admin_menu_license'] = "License";
 
@@ -197,6 +198,7 @@ $_ADDONLANG['admin_check'] = "Check";
 $_ADDONLANG['admin_continue'] = "Continue";
 $_ADDONLANG['admin_updatenow'] = "Update Now";
 $_ADDONLANG['admin_dismiss'] = "Dismiss";
+$_ADDONLANG['admin_none'] = "None";
 
 $_ADDONLANG['admin_savechanges'] = "Save Changes";
 
@@ -210,8 +212,11 @@ $_ADDONLANG['admin_fraud'] = "Fraud";
 //Accessibility
 $_ADDONLANG['admin_accessibility_title_accessibility'] = "Accessibility";
 $_ADDONLANG['admin_accessibility_title_clientzones'] = "Client Zones";
+$_ADDONLANG['admin_accessibility_title_menu'] = "Client Menus";
 $_ADDONLANG['admin_accessibility_title_admin'] = "Admin";
 
+$_ADDONLANG['admin_accessibility_option_disableprimarymenu'] = "Disable Primary Menu";
+$_ADDONLANG['admin_accessibility_option_disablesecondarymenu'] = "Disable Management Menu";
 $_ADDONLANG['admin_accessibility_option_hidesoa'] = "Hide SOA Record";
 $_ADDONLANG['admin_accessibility_option_disablens'] = "Disable NS Record";
 $_ADDONLANG['admin_accessibility_option_presetttl'] = "Use Pre-set TTL field";
@@ -226,6 +231,8 @@ $_ADDONLANG['admin_accessibility_option_zonelimit'] = "Zone limit";
 $_ADDONLANG['admin_accessibility_option_adminreverse'] = "Enable Reverse";
 $_ADDONLANG['admin_accessibility_option_adminhealth'] = "Health Icon";
 
+$_ADDONLANG['admin_accessibility_desc_disableprimarymenu'] = "Disable in the client area the DNS Management entry in the primary menu.";
+$_ADDONLANG['admin_accessibility_desc_disablesecondarymenu'] = "Disable in the client area the DNS Management entry in the management menu of domain and productdetails pages.";
 $_ADDONLANG['admin_accessibility_desc_hidesoa'] = "Hide the SOA record for users. If you show the SOA record it will always be disabled.";
 $_ADDONLANG['admin_accessibility_desc_disablens'] = "When ticked, the nameserver records will be disabled for users.";
 $_ADDONLANG['admin_accessibility_desc_presetttl'] = "Use a pre-set TTL dropdown menu instead of a textbox.";
@@ -243,25 +250,17 @@ $_ADDONLANG['admin_accessibility_desc_adminhealth'] = "Show health icon in the a
 //Automation
 $_ADDONLANG['admin_automation_title_zones'] = "Zones";
 $_ADDONLANG['admin_automation_title_dnsmanagement'] = "DNS Management";
-$_ADDONLANG['admin_automation_title_dnsforproducts'] = "DNS for products";
+$_ADDONLANG['admin_automation_title_admin'] = "Admin";
 
 $_ADDONLANG['admin_automation_option_create'] = "Auto create zone";
 $_ADDONLANG['admin_automation_option_maintenance'] = "Auto maintenance";
 $_ADDONLANG['admin_automation_option_delete'] = "Auto delete zone";
+$_ADDONLANG['admin_automation_option_todo'] = "Auto add to-do items";
 
 $_ADDONLANG['admin_automation_option_enabledns'] = "Auto enable DNS Management";
 $_ADDONLANG['admin_automation_option_health'] = "Enable Health System";
 
 $_ADDONLANG['admin_automation_option_products'] = "Enable DNS for products";
-
-//Handling
-$_ADDONLANG['admin_handling_title_product'] = "Product Handling";
-$_ADDONLANG['admin_handling_title_registrar'] = "Registrar Handling";
-
-$_ADDONLANG['admin_handling_desc_selectcreated'] = "Select products for which a DNS zone <u>schould be</u> created.";
-$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Select products for which a DNS zone <u>schould not be</u> created when ordered together with a domain registration or transfer.";
-$_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Select registrars for which a DNS zone <u>schould not be</u> created.";
-
 
 $_ADDONLANG['admin_automation_desc_create'] = "Automatically create a new zone for new domain orders after shopping cart checkout.";
 $_ADDONLANG['admin_automation_desc_maintenance'] = "Automatically maintain local index during the daily cron job.";
@@ -271,6 +270,16 @@ $_ADDONLANG['admin_automation_desc_enabledns'] = "Automatically enable WHMCS DNS
 $_ADDONLANG['admin_automation_desc_health'] = "Tick to enable the zone health system.";
 
 $_ADDONLANG['admin_automation_desc_products'] = "Automatically create a zone for specified products with external domains.";
+
+$_ADDONLANG['admin_automation_desc_todo'] = "Automatically add to-do items when staff attention is required.";
+
+//Handling
+$_ADDONLANG['admin_handling_title_product'] = "Product Handling";
+$_ADDONLANG['admin_handling_title_registrar'] = "Registrar Handling";
+
+$_ADDONLANG['admin_handling_desc_selectcreated'] = "Select products for which a DNS zone <u>should be</u> created.";
+$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Select products for which a DNS zone <u>should not be</u> created for its linked domain registration or transfer.";
+$_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Select registrars for which a DNS zone <u>should not be</u> created.";
 
 //License
 $_ADDONLANG['admin_title_licenseinfo'] = "License Information";
@@ -299,6 +308,8 @@ $_ADDONLANG['admin_logs_table_id'] = "ID";
 $_ADDONLANG['admin_logs_table_log'] = "Log";
 $_ADDONLANG['admin_logs_table_type'] = "Type";
 $_ADDONLANG['admin_logs_table_date'] = "Date";
+$_ADDONLANG['admin_logs_clearlogs'] = "Clear Logs";
+
 
 // DNS Management
 $_ADDONLANG['admin_manage_tab_records'] = "Records";
@@ -497,6 +508,10 @@ $_ADDONLANG['admin_records_select_default'] = "Default (yyyymmddcc)";
 $_ADDONLANG['admin_records_select_epoch'] = "Epoch (Unix time)";
 $_ADDONLANG['admin_records_select_zero'] = "Last edited record time";
 
+//Tools
+$_ADDONLANG['admin_tools_title_tools'] = "Tools";
+$_ADDONLANG['admin_tools_title_mutationtool'] = "Mutation Tool";
+
 //System
 $_ADDONLANG['admin_system_title_system'] = "System";
 
@@ -522,6 +537,16 @@ $_ADDONLANG['admin_system_inindex'] = "Zones in index.";
 $_ADDONLANG['admin_system_checkupdates'] = "Check for Updates";
 
 $_ADDONLANG['admin_system_text_runningtoolong'] = "Cron running for too long?";
+
+//Access Control
+$_ADDONLANG['admin_access_title_accesscontrol'] = "Access Control";
+$_ADDONLANG['admin_access_title_accesslevels'] = "Access Levels";
+$_ADDONLANG['admin_access_title_groupassignment'] = "Group Assignment";
+$_ADDONLANG['admin_access_fullaccess'] = "Full Access";
+$_ADDONLANG['admin_access_zonemanagement'] = "Zone Management";
+$_ADDONLANG['admin_access_level'] = "Level";
+$_ADDONLANG['admin_access_notassigned'] = "Not Assigned";
+$_ADDONLANG['admin_access_warning'] = "Also check the WHMCS Setup Administrator Roles and Addon Module Access Control settings.";
 
 //Templates
 $_ADDONLANG['admin_template_title_templates'] = "Templates";
@@ -549,8 +574,12 @@ $_ADDONLANG['admin_template_option_assignedproducts'] = "Assigned products";
 $_ADDONLANG['admin_template_desc_defaultipv4'] = "For label: &lt;default-ipv4&gt;.";
 $_ADDONLANG['admin_template_desc_defaultipv6'] = "For label: &lt;default-ipv6&gt;.";
 
-$_ADDONLANG['admin_template_desc_assignedproducts'] = "Products can only be selected when not used for another template. You can select multiple products";
+$_ADDONLANG['admin_template_desc_assignedproducts'] = "Products can only be selected when not used for another template. You can select multiple products.";
 $_ADDONLANG['admin_template_desc_cannotassign'] = "Product cannot be set for the default template.";
+
+//Console
+$_ADDONLANG['admin_console_title_updater'] = "Updater";
+$_ADDONLANG['admin_console_title_mutation'] = "Mutation Tool";
 
 //Admin Messages
 $_ADDONLANG['admin_msg_rde_title'] = "Remote Database Problem";
@@ -558,6 +587,9 @@ $_ADDONLANG['admin_msg_rde_desc'] = "There is an issue with a remote database. C
 
 $_ADDONLANG['admin_msg_ssherror_title'] = "SSH Error Occurred";
 $_ADDONLANG['admin_msg_ssherror_desc'] = "There is an issue with a SSH connection. Check your nameserver SSH settings!";
+
+$_ADDONLANG['admin_msg_sshsuccess_title'] = "SSH Conection Established";
+$_ADDONLANG['admin_msg_sshsuccess_desc'] = "A SSH connection to the server was successfully established.";
 
 $_ADDONLANG['admin_msg_invalid_request_title'] = "Invalid Request";
 $_ADDONLANG['admin_msg_invalid_request_desc'] = "System could not process your request as it seems to be invalid.";
@@ -569,7 +601,7 @@ $_ADDONLANG['admin_msg_cron_reset_title'] = "Cron Reset Completed";
 $_ADDONLANG['admin_msg_cron_reset_desc'] = "The rectify cron state has been reset successfully.";
 
 $_ADDONLANG['admin_msg_update_title'] = "New Update Available";
-$_ADDONLANG['admin_msg_update_desc'] = "A new update (v%s [%h]) of SoluteDNS is available.";
+$_ADDONLANG['admin_msg_update_desc'] = "A new update v%s (%h) is now available. You can download the update package from the <a href=\"https://ssc.netdistrict.net\">client area</a>.";
 
 $_ADDONLANG['admin_msg_update_dismiss_title'] = "Update Dismissed";
 $_ADDONLANG['admin_msg_update_dismiss_desc'] = "The update notification has been dismissed.";
@@ -577,6 +609,11 @@ $_ADDONLANG['admin_msg_update_dismiss_desc'] = "The update notification has been
 $_ADDONLANG['admin_msg_update_check_title'] = "Update Check Completed";
 $_ADDONLANG['admin_msg_update_check_desc'] = "System has checked for updates.";
 
+$_ADDONLANG['admin_msg_nozone_title'] = "Zone could not be found!";
+$_ADDONLANG['admin_msg_nozone_desc'] = "The zone does not seem to be assigned and may not exists on the nameserver.";
+
+$_ADDONLANG['admin_msg_clearlogs_title'] = "Logs Cleared Successfully!";
+$_ADDONLANG['admin_msg_clearlogs_desc'] = "All SoluteDNS logs have been cleared successfully.";
 
 #####################
 // GLOBAL LANGUAGE //
@@ -613,6 +650,7 @@ $_ADDONLANG['global_desc_system_slavezone'] = "The zone seems to be a slave zone
 $_ADDONLANG['global_desc_system_permission'] = "You do not have sufficient permissions to access this zone.";
 $_ADDONLANG['global_desc_system_auth'] = "You do not seem to be authorised to make changes to this zone.";
 $_ADDONLANG['global_desc_system_invalid'] = "System could not process your request as it seems to be invalid.";
+$_ADDONLANG['global_desc_system_invalid_record'] = "System could not process your request because the record type is not allowed.";
 $_ADDONLANG['global_desc_unauthorized'] = "System could not process your request as it seems to be unauthorized.";
 
 $_ADDONLANG['global_desc_dns_record_edited'] = "Changed records have been saved successfully.";
