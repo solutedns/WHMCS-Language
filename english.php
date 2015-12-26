@@ -7,9 +7,9 @@
 Language file:			English
 Created by:				SoluteDNS
 
-Version:				0.2.1
-Date:					10-10-2015
-Distribution Package:	15201
+Version:				0.2.2
+Date:					28-12-2015
+Distribution Package:	15202
 
 Copyright (C) NetDistrict 2015
 All Rights Reserved
@@ -199,6 +199,7 @@ $_ADDONLANG['admin_continue'] = "Continue";
 $_ADDONLANG['admin_updatenow'] = "Update Now";
 $_ADDONLANG['admin_dismiss'] = "Dismiss";
 $_ADDONLANG['admin_none'] = "None";
+$_ADDONLANG['admin_index'] = "Index";
 
 $_ADDONLANG['admin_savechanges'] = "Save Changes";
 
@@ -221,6 +222,7 @@ $_ADDONLANG['admin_accessibility_option_hidesoa'] = "Hide SOA Record";
 $_ADDONLANG['admin_accessibility_option_disablens'] = "Disable NS Record";
 $_ADDONLANG['admin_accessibility_option_presetttl'] = "Use Pre-set TTL field";
 $_ADDONLANG['admin_accessibility_option_hideassist'] = "Hide Client DNS Assistant";
+$_ADDONLANG['admin_accessibility_option_dnspagination'] = "DNS Pagination";
 
 $_ADDONLANG['admin_accessibility_option_clientzones'] = "Enable Client Zones";
 $_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Enable Client Template";
@@ -237,6 +239,7 @@ $_ADDONLANG['admin_accessibility_desc_hidesoa'] = "Hide the SOA record for users
 $_ADDONLANG['admin_accessibility_desc_disablens'] = "When ticked, the nameserver records will be disabled for users.";
 $_ADDONLANG['admin_accessibility_desc_presetttl'] = "Use a pre-set TTL dropdown menu instead of a textbox.";
 $_ADDONLANG['admin_accessibility_desc_hideassist'] = "Tick this checkbox to hide the DNS wizard for your clients.";
+$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Switch to paginations if zone exeeds records. (0 = always)";
 
 $_ADDONLANG['admin_accessibility_desc_clientzones'] = "Select to enable zone management for clients.";
 $_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Select to enable the default template for clients.";
@@ -265,6 +268,7 @@ $_ADDONLANG['admin_automation_option_products'] = "Enable DNS for products";
 $_ADDONLANG['admin_automation_desc_create'] = "Automatically create a new zone for new domain orders after shopping cart checkout.";
 $_ADDONLANG['admin_automation_desc_maintenance'] = "Automatically maintain local index during the daily cron job.";
 $_ADDONLANG['admin_automation_desc_delete'] = "Automatically delete zones of domains and products with selected state.";
+$_ADDONLANG['admin_automation_desc_deletewhmcs'] = "When WHMCS domain/product is removed.";
 
 $_ADDONLANG['admin_automation_desc_enabledns'] = "Automatically enable WHMCS DNS Management for newly created zones.";
 $_ADDONLANG['admin_automation_desc_health'] = "Tick to enable the zone health system.";
@@ -276,10 +280,20 @@ $_ADDONLANG['admin_automation_desc_todo'] = "Automatically add to-do items when 
 //Handling
 $_ADDONLANG['admin_handling_title_product'] = "Product Handling";
 $_ADDONLANG['admin_handling_title_registrar'] = "Registrar Handling";
+$_ADDONLANG['admin_handling_title_nameserver'] = "Nameserver Handling";
 
 $_ADDONLANG['admin_handling_desc_selectcreated'] = "Select products for which a DNS zone <u>should be</u> created.";
 $_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Select products for which a DNS zone <u>should not be</u> created for its linked domain registration or transfer.";
 $_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Select registrars for which a DNS zone <u>should not be</u> created.";
+$_ADDONLANG['admin_handling_desc_nameserver'] = "Configure in which way zones are distributed among your nameserver clusters.";
+
+$_ADDONLANG['admin_handling_option_default'] = "Default Nameserver";
+$_ADDONLANG['admin_handling_desc_default'] = "Select which nameserver should be used as default.";
+
+$_ADDONLANG['admin_handling_option_distribution'] = "Zone Distribution";
+$_ADDONLANG['admin_handling_desc_distribution'] = "Select how zones should be distributed among your nameserver clusters.";
+$_ADDONLANG['admin_handling_option_default'] = "Default";
+$_ADDONLANG['admin_handling_option_equal'] = "Equal";
 
 //License
 $_ADDONLANG['admin_title_licenseinfo'] = "License Information";
@@ -400,6 +414,7 @@ $_ADDONLANG['admin_dnssec_rectify'] = "Rectify Zone";
 $_ADDONLANG['admin_dnssec_check'] = "Check Status";
 $_ADDONLANG['admin_dnssec_nsec3'] = "Set NSEC3";
 $_ADDONLANG['admin_dnssec_reset'] = "Reset DNSsec";
+$_ADDONLANG['admin_dnssec_unset'] = "Unset DNSsec";
 $_ADDONLANG['admin_dnssec_reload'] = "Reload Keys";
 
 $_ADDONLANG['admin_loading_zone'] = "Loading zone...";
@@ -452,6 +467,13 @@ $_ADDONLANG['admin_nameservers_desc_setnsec3'] = "Use NSEC3 instead of the defau
 $_ADDONLANG['admin_nameservers_desc_showtoclient'] = "Show DNSsec keys to client.";
 
 $_ADDONLANG['admin_nameservers_error'] = "Error details";
+
+$_ADDONLANG['admin_nameservers_add_title'] = "Add New Nameserver";
+$_ADDONLANG['admin_nameservers_add_desc'] = "Here you can add a new nameserver. Please make sure you only add master nameservers. Slave servers should not be added.";
+
+$_ADDONLANG['admin_nameservers_index_title'] = "Nameserver not in index?";
+$_ADDONLANG['admin_nameservers_index_desc'] = "This nameserver was not found in the index. You might want to index the nameserver.";
+
 
 //Overview
 $_ADDONLANG['admin_overview_title_domains']  = "Domains";
@@ -580,6 +602,7 @@ $_ADDONLANG['admin_template_desc_cannotassign'] = "Product cannot be set for the
 //Console
 $_ADDONLANG['admin_console_title_updater'] = "Updater";
 $_ADDONLANG['admin_console_title_mutation'] = "Mutation Tool";
+$_ADDONLANG['admin_console_title_index'] = "Index Nameserver";
 
 //Admin Messages
 $_ADDONLANG['admin_msg_rde_title'] = "Remote Database Problem";
@@ -593,6 +616,9 @@ $_ADDONLANG['admin_msg_sshsuccess_desc'] = "A SSH connection to the server was s
 
 $_ADDONLANG['admin_msg_invalid_request_title'] = "Invalid Request";
 $_ADDONLANG['admin_msg_invalid_request_desc'] = "System could not process your request as it seems to be invalid.";
+
+$_ADDONLANG['admin_msg_invalid_license_title'] = "Function Not Licensed";
+$_ADDONLANG['admin_msg_invalid_license_desc'] = "Requested function could not be completed because it's not licensed.";
 
 $_ADDONLANG['admin_msg_maintenance_title'] = "Maintenance Mode Activated";
 $_ADDONLANG['admin_msg_maintenance_desc'] = "Maintenance mode is activated. DNS Management for clients is disabled.";
@@ -797,6 +823,10 @@ $_ADDONLANG['health_ZONE002'] = "WARNING: One or more records are incorrect, thi
 $_ADDONLANG['health_LU001'] = "ERROR: Zone is not consistent over all nameservers and one or more nameservers failed to report this zone!";
 $_ADDONLANG['health_LU002'] = "ERROR: Zone is not consistent over all nameservers!";
 $_ADDONLANG['health_LU003'] = "WARNING: One or more nameservers failed to report this zone!";
+
+//NO JAVASCRIPT
+$_ADDONLANG['nojavascript_title'] = "JavaScript Disabled";
+$_ADDONLANG['nojavascript_desc'] = "This page requires JavaScript to be enabled to work properly. Please enable JavaScript in your browser to continue.";
 
 // Override
 if(file_exists(dirname(__FILE__).'/override/english.php'))
