@@ -7,11 +7,11 @@
 Language file:			English
 Created by:				SoluteDNS
 
-Version:				0.2.2
-Date:					28-12-2015
-Distribution Package:	15202
+Version:				0.2.3
+Date:					29-01-2016
+Distribution Package:	16001
 
-Copyright (C) NetDistrict 2015
+Copyright (C) NetDistrict 2016
 All Rights Reserved
 **********************************************
 */
@@ -195,6 +195,7 @@ $_ADDONLANG['admin_close'] = "Close";
 $_ADDONLANG['admin_import'] = "Import";
 $_ADDONLANG['admin_assign'] = "Assign";
 $_ADDONLANG['admin_check'] = "Check";
+$_ADDONLANG['admin_edit'] = "Edit";
 $_ADDONLANG['admin_continue'] = "Continue";
 $_ADDONLANG['admin_updatenow'] = "Update Now";
 $_ADDONLANG['admin_dismiss'] = "Dismiss";
@@ -266,9 +267,9 @@ $_ADDONLANG['admin_automation_option_health'] = "Enable Health System";
 $_ADDONLANG['admin_automation_option_products'] = "Enable DNS for products";
 
 $_ADDONLANG['admin_automation_desc_create'] = "Automatically create a new zone for new domain orders after shopping cart checkout.";
-$_ADDONLANG['admin_automation_desc_maintenance'] = "Automatically maintain local index during the daily cron job.";
+$_ADDONLANG['admin_automation_desc_maintenance'] = "Automatically maintain local index.";
 $_ADDONLANG['admin_automation_desc_delete'] = "Automatically delete zones of domains and products with selected state.";
-$_ADDONLANG['admin_automation_desc_deletewhmcs'] = "When WHMCS domain/product is removed.";
+$_ADDONLANG['admin_automation_desc_deletewhmcs'] = "When domain/product is removed in WHMCS.";
 
 $_ADDONLANG['admin_automation_desc_enabledns'] = "Automatically enable WHMCS DNS Management for newly created zones.";
 $_ADDONLANG['admin_automation_desc_health'] = "Tick to enable the zone health system.";
@@ -442,6 +443,7 @@ $_ADDONLANG['admin_nameservers_option_nameserver6'] = "Nameserver 6";
 $_ADDONLANG['admin_nameservers_option_useprivatekey'] = "Use Private Key";
 $_ADDONLANG['admin_nameservers_option_privatekey'] = "Private Key";
 
+$_ADDONLANG['admin_nameservers_option_pdnsversion'] = "PowerDNS version";
 $_ADDONLANG['admin_nameservers_option_enablednssec'] = "Enable DNSsec";
 $_ADDONLANG['admin_nameservers_option_autorectify'] = "Auto rectify zones";
 $_ADDONLANG['admin_nameservers_option_autoenablednssec'] = "Auto enable DNSsec";
@@ -533,6 +535,12 @@ $_ADDONLANG['admin_records_select_zero'] = "Last edited record time";
 //Tools
 $_ADDONLANG['admin_tools_title_tools'] = "Tools";
 $_ADDONLANG['admin_tools_title_mutationtool'] = "Mutation Tool";
+$_ADDONLANG['admin_tools_title_dnssectool'] = "DNSsec Tool";
+
+$_ADDONLANG['admin_tools_startmutation'] = "Start Mutation";
+$_ADDONLANG['admin_tools_starttool'] = "Start Tool";
+$_ADDONLANG['admin_tools_server'] = "Server";
+$_ADDONLANG['admin_tools_action'] = "Action";
 
 //System
 $_ADDONLANG['admin_system_title_system'] = "System";
@@ -544,14 +552,16 @@ $_ADDONLANG['admin_system_option_idn'] = "IDN Support";
 $_ADDONLANG['admin_system_option_version'] = "Version";
 $_ADDONLANG['admin_system_option_maintenance'] = "Maintenance Mode";
 $_ADDONLANG['admin_system_option_logging'] = "System Logging";
+$_ADDONLANG['admin_system_option_debug'] = "Debug Logging";
 
 $_ADDONLANG['admin_system_desc_maintenance'] = "Tick to enable maintenance mode.";
 $_ADDONLANG['admin_system_desc_logging'] = "Tick to enable system logging (Only logs automated processes).";
+$_ADDONLANG['admin_system_desc_debug'] = "Tick to enable debug logging for cron tasks.";
 
 $_ADDONLANG['admin_system_active'] = "Active";
 $_ADDONLANG['admin_system_inactive'] = "Inactive";
 $_ADDONLANG['admin_system_inqueue'] = "In queue";
-$_ADDONLANG['admin_system_lastrun'] = "Last cron run";
+$_ADDONLANG['admin_system_lastrun'] = "Last cron run with tasks";
 $_ADDONLANG['admin_system_idle'] = "Idle";
 $_ADDONLANG['admin_system_running'] = "Running";
 $_ADDONLANG['admin_system_reset'] = "Reset Cron";
@@ -602,6 +612,7 @@ $_ADDONLANG['admin_template_desc_cannotassign'] = "Product cannot be set for the
 //Console
 $_ADDONLANG['admin_console_title_updater'] = "Updater";
 $_ADDONLANG['admin_console_title_mutation'] = "Mutation Tool";
+$_ADDONLANG['admin_console_title_dnssec'] = "DNSsec Tool";
 $_ADDONLANG['admin_console_title_index'] = "Index Nameserver";
 
 //Admin Messages
@@ -726,6 +737,13 @@ $_ADDONLANG['global_validate_dns_invalid_arpa'] = "Reverse name not valid.";
 $_ADDONLANG['global_validate_dns_not_unique'] = "Similar record already exists.";
 $_ADDONLANG['global_validate_dns_non_alias_target'] = "You cannot refer a NS or MX record to a CNAME record.";
 
+$_ADDONLANG['global_validate_dns_tlsa_parts_missing'] = htmlentities("A TLSA record must contain a: <usage> <selector> <type> <fingeprint>.");
+$_ADDONLANG['global_validate_dns_tlsa_invalid_0_part'] = "Either a: 0 (PKIX-TA), 1 (PKIX-EE), 2 (DANE-TA) or 3 (DANE-EE) usage field must be provided.";
+$_ADDONLANG['global_validate_dns_tlsa_invalid_1_part'] = "Either: 0 (Match full certificate) or 1 (Match only SubjectPublicKeyInfo) selector field must be provided.";
+$_ADDONLANG['global_validate_dns_tlsa_invalid_2_part'] = "Either: 0 (Exact match), 1 (SHA-256 hash) or 2 (SHA-512 hash) matching type field must be provided.";
+$_ADDONLANG['global_validate_dns_tlsa_invalid_3_part'] = "A SHA-256 fingerprint with 64 character ASCII hexadecimal must be provided.";
+$_ADDONLANG['global_validate_dns_tlsa_invalid_4_part'] = "A SHA-512 fingerprint with 128 character ASCII hexadecimal must be provided.";
+
 $_ADDONLANG['global_validate_dns_naptr_parts_missing'] = htmlentities("A NAPTR record must contain (including the quotes and trailing dot): <order> <preference> \"<flags>\" \"<service>\" \"<regexp>\" replacement.");
 $_ADDONLANG['global_validate_dns_naptr_part_0_invalid'] = "Record part 1 must be numeric.";
 $_ADDONLANG['global_validate_dns_naptr_part_1_quote_invalid'] = "Record part 2 must be quoted.";
@@ -811,7 +829,10 @@ $_ADDONLANG['global_msg_template_activated_desc'] = "The default template for yo
 
 $_ADDONLANG['global_msg_invalid_reverse_title'] = "Invalid reverse zone";
 $_ADDONLANG['global_msg_invalid_reverse_desc'] = "Reverse zone seems to be invalid and cannot be created.";
-						
+
+$_ADDONLANG['global_msg_invalid_input_title'] = "Invalid Input";
+$_ADDONLANG['global_msg_invalid_input_desc'] = "System could not process your request because of an invalid input.";
+		
 //HEALTH
 $_ADDONLANG['health_ok'] = "Ok.";
 $_ADDONLANG['health_pending'] = "Status is pending...";
