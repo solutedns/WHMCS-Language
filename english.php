@@ -7,9 +7,9 @@
 Language file:			English
 Created by:				SoluteDNS
 
-Version:				0.2.3
-Date:					29-01-2016
-Distribution Package:	16001
+Version:				0.2.4
+Date:					21-01-2016
+Distribution Package:	16002
 
 Copyright (C) NetDistrict 2016
 All Rights Reserved
@@ -296,6 +296,8 @@ $_ADDONLANG['admin_handling_desc_distribution'] = "Select how zones should be di
 $_ADDONLANG['admin_handling_option_default'] = "Default";
 $_ADDONLANG['admin_handling_option_equal'] = "Equal";
 
+$_ADDONLANG['admin_handling_dnsforproduct'] = "DNS for product is not enabled. Please enable DNS for products first at the Automation settings.";
+
 //License
 $_ADDONLANG['admin_title_licenseinfo'] = "License Information";
 $_ADDONLANG['admin_title_licensesettings'] = "License Settings";
@@ -458,7 +460,7 @@ $_ADDONLANG['admin_nameservers_desc_nameserver1'] = "The primary nameserver will
 $_ADDONLANG['admin_nameservers_desc_nameserver6'] = "Leave extra fields empty if less nameservers are used.";
 
 $_ADDONLANG['admin_nameservers_desc_sshhost'] = "Domain or IP of the remote server containing the PowerDNS Zones.";
-$_ADDONLANG['admin_nameservers_desc_sshport'] = "Default MySQL port is 22.";
+$_ADDONLANG['admin_nameservers_desc_sshport'] = "Default SSH port is 22.";
 
 $_ADDONLANG['admin_nameservers_desc_useprivatekey'] = "Tick, to use a private key to login to SSH instead of a password.";
 
@@ -519,7 +521,7 @@ $_ADDONLANG['admin_records_option_serial'] = "Serial";
 $_ADDONLANG['admin_records_option_refresh'] = "Refresh";
 $_ADDONLANG['admin_records_option_retry'] = "Retry";
 $_ADDONLANG['admin_records_option_expire'] = "Expire";
-$_ADDONLANG['admin_records_option_ttl'] = "TTL";
+$_ADDONLANG['admin_records_option_ttl'] = "Minimum TTL";
 
 $_ADDONLANG['admin_records_option_recordlimit'] = "Record Limit";
 
@@ -584,8 +586,9 @@ $_ADDONLANG['admin_access_warning'] = "Also check the WHMCS Setup Administrator 
 $_ADDONLANG['admin_template_title_templates'] = "Templates";
 $_ADDONLANG['admin_template_title_template'] = "Template";
 $_ADDONLANG['admin_template_title_settings'] = "Settings";
-$_ADDONLANG['admin_template_title_defaultip'] = "Default IP addresses";
+$_ADDONLANG['admin_template_title_defaultip'] = "Default IP Addresses";
 $_ADDONLANG['admin_template_title_assignment'] = "Product Assignment";
+$_ADDONLANG['admin_template_title_ttl'] = "TTL Settings";
 
 $_ADDONLANG['admin_template_addtemplate'] = "Add Template";
 $_ADDONLANG['admin_template_addnewtemplate'] = "Add New Template";
@@ -602,12 +605,17 @@ $_ADDONLANG['admin_template_text_deletetemplate'] = "Are you sure you want to de
 $_ADDONLANG['admin_template_option_defaultipv4'] = "Default IPv4";
 $_ADDONLANG['admin_template_option_defaultipv6'] = "Default IPv6";
 $_ADDONLANG['admin_template_option_assignedproducts'] = "Assigned products";
+$_ADDONLANG['admin_template_option_defaultttl'] = "Default TTL";
+$_ADDONLANG['admin_template_option_soattl'] = "SOA TTL";
+$_ADDONLANG['admin_template_option_nsttl'] = "NS TTL";
 
 $_ADDONLANG['admin_template_desc_defaultipv4'] = "For label: &lt;default-ipv4&gt;.";
 $_ADDONLANG['admin_template_desc_defaultipv6'] = "For label: &lt;default-ipv6&gt;.";
 
 $_ADDONLANG['admin_template_desc_assignedproducts'] = "Products can only be selected when not used for another template. You can select multiple products.";
 $_ADDONLANG['admin_template_desc_cannotassign'] = "Product cannot be set for the default template.";
+$_ADDONLANG['admin_template_desc_ttl'] = "Leave empty for default TTL value.";
+
 
 //Console
 $_ADDONLANG['admin_console_title_updater'] = "Updater";
@@ -667,13 +675,13 @@ $_ADDONLANG['global_title_dns_record_added'] = "Record has been added!";
 $_ADDONLANG['global_title_dns_record_deleted'] = "Record has been deleted!";
 $_ADDONLANG['global_title_dns_record_limit'] = "The maximum number of records has been reached!";
 $_ADDONLANG['global_title_dns_zone_limit'] = "The maximum number of zones has been reached!";
-$_ADDONLANG['global_title_dns_error'] = "Unable to make changes.";
+$_ADDONLANG['global_title_dns_error'] = "Unable to make changes";
 $_ADDONLANG['global_title_dns_invalid_hostname'] = "Invalid Hostname";
 $_ADDONLANG['global_title_dns_invalid_domain'] = "Invalid Domain";
 $_ADDONLANG['global_title_dns_reverse_updated'] = "Reverse Hostname Updated";
-$_ADDONLANG['global_title_dns_zone_exists'] = "Zone Not Available.";
-$_ADDONLANG['global_title_dns_zone_created'] = "Zone Created.";
-$_ADDONLANG['global_title_dns_zone_unable_delete'] = "Unable To Delete Zone.";
+$_ADDONLANG['global_title_dns_zone_exists'] = "Zone Not Available";
+$_ADDONLANG['global_title_dns_zone_created'] = "Zone Created";
+$_ADDONLANG['global_title_dns_zone_unable_delete'] = "Unable To Delete Zone";
 $_ADDONLANG['global_title_dns_zone_exception_delete'] = "Zone Deleted With Exception";
 $_ADDONLANG['global_title_dns_zone_deleted'] = "Zone Deleted";
 $_ADDONLANG['global_title_dns_zone_imported'] = "Zone Imported";
@@ -787,6 +795,8 @@ $_ADDONLANG['global_validate_dns_srv_part_2_invalid'] =  "A SRV record must cont
 
 $_ADDONLANG['global_validate_dns_hinfo_invalid'] = "The HINFO content field contains an invalid value.";
 
+$_ADDONLANG['global_validate_template_tag'] = "Please make sure if you used the &lt;default-ipv4&gt; or &lt;default-ipv6&gt; tag, the default IP has been defined in the template settings.";
+
 // Global Messages
 $_ADDONLANG['global_msg_changes_saved_title'] = "Changes have been saved!";
 $_ADDONLANG['global_msg_changes_saved_desc'] = "All changes have been saved successfully.";
@@ -794,8 +804,8 @@ $_ADDONLANG['global_msg_changes_saved_desc'] = "All changes have been saved succ
 $_ADDONLANG['global_msg_template_created_title'] = "New Template Created!";
 $_ADDONLANG['global_msg_template_created_desc'] = "A new template was added successfully.";
 
-$_ADDONLANG['global_msg_template_removed_title'] = "Template removed!";
-$_ADDONLANG['global_msg_template_removed_desc'] = "The template was removed successfully.";
+$_ADDONLANG['global_msg_template_update_title'] = "Template name updated!";
+$_ADDONLANG['global_msg_template_update_desc'] = "The template name was updated successfully.";
 
 $_ADDONLANG['global_msg_template_removed_title'] = "Template removed!";
 $_ADDONLANG['global_msg_template_removed_desc'] = "The template was removed successfully.";
@@ -816,7 +826,7 @@ $_ADDONLANG['global_msg_client_notfound_desc'] = "The client could not be found.
 
 $_ADDONLANG['global_msg_domain_notlocal_title'] = "Unable to bind to local domain!";
 $_ADDONLANG['global_msg_domain_notlocald_desc'] = "Could not bind this zone to a local active or pending domain for this client.";
-$_ADDONLANG['global_msg_domain_notlocalp_desc'] = "Could not bind this zone to a local active or pending product which is set to allow DNS zones for this client";
+$_ADDONLANG['global_msg_domain_notlocalp_desc'] = "Could not bind this zone to a local active or pending product which is set to allow DNS zones for this client.";
 
 $_ADDONLANG['global_msg_unknown_zonetype_title'] = "Unable to determine zone type!";
 $_ADDONLANG['global_msg_unknown_zonetype_desc'] = "Zone could not be created because the zone type is unknown.";
