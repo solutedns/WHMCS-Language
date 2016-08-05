@@ -7,9 +7,9 @@
 Language file:			Spanish
 Created by:				SoluteDNS
 
-Version:				0.2.4
-Date:					28-05-2016
-Distribution Package:	16002
+Version:				0.2.5
+Date:					01-08-2016
+Distribution Package:	16003
 
 Copyright (C) NetDistrict 2016
 All Rights Reserved
@@ -283,8 +283,18 @@ $_ADDONLANG['admin_handling_title_product'] = "Manejo de producto";
 $_ADDONLANG['admin_handling_title_registrar'] = "Manejo de registrador";
 $_ADDONLANG['admin_handling_title_nameserver'] = "Manejo de nombre de servidor";
 
-$_ADDONLANG['admin_handling_desc_selectcreated'] = "Seleccione productos para los cuales <u>debería</u> crearse una zona DNS.";
-$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Seleccione productos para los cuales <u>no debería</u> crearse una zona DNS para su registro de dominio enlazado o transferencia.";
+$_ADDONLANG['admin_handling_productzone'] = "Crearse producto zona";
+$_ADDONLANG['admin_handling_domainzone'] = "Omitir dominio zona";
+$_ADDONLANG['admin_handling_productsettings'] = "Habilitar producto ajustes";
+$_ADDONLANG['admin_handling_dnssec'] = "DNSsec habilitada";
+$_ADDONLANG['admin_handling_recordlimit'] = "Límite de registro";
+$_ADDONLANG['admin_handling_defaultcluster'] = "Racimo por defecto";
+
+$_ADDONLANG['admin_handling_autosave'] = "Guardado automático los campos ";
+
+$_ADDONLANG['admin_handling_desc_selectcreated'] = "Seleccione productos para los cuales debería crearse una zona DNS.";
+$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Seleccione productos para los cuales no debería crearse una zona DNS para su registro de dominio enlazado o transferencia.";
+$_ADDONLANG['admin_handling_desc_recordlimit'] = "Limitar el máximo de registros permitidos en una zona (0=ilimitado).";
 $_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Seleccione los registradores para los cuales <u>no debería</u> crearse una zona DNS.";
 $_ADDONLANG['admin_handling_desc_nameserver'] = "Configurar en qué forma de zonas se distribuyen entre los grupos del nombre del servidor.";
 
@@ -543,9 +553,14 @@ $_ADDONLANG['admin_tools_action'] = "Acción";
 
 // System
 $_ADDONLANG['admin_system_title_system'] = "Sistema";
+$_ADDONLANG['admin_system_title_crons'] = "Cronjobs";
+$_ADDONLANG['admin_system_title_logging'] = "Registro del sistema";
 
-$_ADDONLANG['admin_system_option_rectifyqueue'] = "Rectificar cola DNSsec";
 $_ADDONLANG['admin_system_option_rectifycron'] = "Rectificar cron DNSsec";
+$_ADDONLANG['admin_system_option_healthcron'] = "Sistema de salud cron";
+$_ADDONLANG['admin_system_option_cronmode'] = "Cron Modo";
+$_ADDONLANG['admin_system_option_cronstatus'] = "Estado";
+
 $_ADDONLANG['admin_system_option_index'] = "Índice";
 $_ADDONLANG['admin_system_option_idn'] = "Soporte IDN";
 $_ADDONLANG['admin_system_option_version'] = "Versión";
@@ -639,7 +654,7 @@ $_ADDONLANG['admin_msg_maintenance_title'] = "Modo de mantenimiento activado";
 $_ADDONLANG['admin_msg_maintenance_desc'] = "El modo de mantenimiento está activado. La gestión DNS para clientes está deshabilitada.";
 
 $_ADDONLANG['admin_msg_cron_reset_title'] = "Reinicio Cron completado";
-$_ADDONLANG['admin_msg_cron_reset_desc'] = "El estado de rectificación cron se ha restablecido correctamente.";
+$_ADDONLANG['admin_msg_cron_reset_desc'] = "El estado de cron se ha restablecido correctamente.";
 
 $_ADDONLANG['admin_msg_update_title'] = "Nueva actualización disponible";
 $_ADDONLANG['admin_msg_update_desc'] = "Hay una nueva actualización disponible v%s (%h). Puede descargar el paquete de <a href=\"https://ssc.netdistrict.net\">client area</a>.";

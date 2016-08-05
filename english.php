@@ -7,9 +7,9 @@
 Language file:			English
 Created by:				SoluteDNS
 
-Version:				0.2.4
-Date:					21-01-2016
-Distribution Package:	16002
+Version:				0.2.5
+Date:					01-08-2016
+Distribution Package:	16003
 
 Copyright (C) NetDistrict 2016
 All Rights Reserved
@@ -251,7 +251,7 @@ $_ADDONLANG['admin_accessibility_desc_zonelimit'] = "Limit the maximum zones all
 $_ADDONLANG['admin_accessibility_desc_adminreverse'] = "Tick to enable Reverse zones in the admin area.";
 $_ADDONLANG['admin_accessibility_desc_adminhealth'] = "Show health icon in the admin domain overviews";
 
-//Automation
+// Automation
 $_ADDONLANG['admin_automation_title_zones'] = "Zones";
 $_ADDONLANG['admin_automation_title_dnsmanagement'] = "DNS Management";
 $_ADDONLANG['admin_automation_title_admin'] = "Admin";
@@ -283,8 +283,18 @@ $_ADDONLANG['admin_handling_title_product'] = "Product Handling";
 $_ADDONLANG['admin_handling_title_registrar'] = "Registrar Handling";
 $_ADDONLANG['admin_handling_title_nameserver'] = "Nameserver Handling";
 
-$_ADDONLANG['admin_handling_desc_selectcreated'] = "Select products for which a DNS zone <u>should be</u> created.";
-$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Select products for which a DNS zone <u>should not be</u> created for its linked domain registration or transfer.";
+$_ADDONLANG['admin_handling_productzone'] = "Create product zone";
+$_ADDONLANG['admin_handling_domainzone'] = "Skip domain zone";
+$_ADDONLANG['admin_handling_productsettings'] = "Enable product settings";
+$_ADDONLANG['admin_handling_dnssec'] = "DNSsec enabled";
+$_ADDONLANG['admin_handling_recordlimit'] = "Record limit";
+$_ADDONLANG['admin_handling_defaultcluster'] = "Default cluster";
+
+$_ADDONLANG['admin_handling_autosave'] = "Autosave enabled fields";
+
+$_ADDONLANG['admin_handling_desc_selectcreated'] = "Select products for which a DNS zone should be created.";
+$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Select products for which a DNS zone should not be created for its linked domain registration or transfer.";
+$_ADDONLANG['admin_handling_desc_recordlimit'] = "Limit the maximum records allowed in a zone (0 = unlimited).";
 $_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Select registrars for which a DNS zone <u>should not be</u> created.";
 $_ADDONLANG['admin_handling_desc_nameserver'] = "Configure in which way zones are distributed among your nameserver clusters.";
 
@@ -509,7 +519,7 @@ $_ADDONLANG['admin_overview_text_deletezone']  = "Are you sure you want to delet
 $_ADDONLANG['admin_loading_data'] = "Loading data from server...";
 $_ADDONLANG['admin_none_available'] = "None Available";
 
-// Nameservers
+// Records
 $_ADDONLANG['admin_records_title_allowed'] = "Allowed Records";
 $_ADDONLANG['admin_records_title_defaultsoa'] = "Default SOA Record";
 $_ADDONLANG['admin_records_title_limit'] = "Limit Records";
@@ -546,9 +556,14 @@ $_ADDONLANG['admin_tools_action'] = "Action";
 
 //System
 $_ADDONLANG['admin_system_title_system'] = "System";
+$_ADDONLANG['admin_system_title_crons'] = "Cronjobs";
+$_ADDONLANG['admin_system_title_logging'] = "System Logging";
 
-$_ADDONLANG['admin_system_option_rectifyqueue'] = "DNSsec Rectify Queue";
 $_ADDONLANG['admin_system_option_rectifycron'] = "DNSsec Rectify Cron";
+$_ADDONLANG['admin_system_option_healthcron'] = "Health System Cron";
+$_ADDONLANG['admin_system_option_cronmode'] = "Cron Mode";
+$_ADDONLANG['admin_system_option_cronstatus'] = "Status";
+
 $_ADDONLANG['admin_system_option_index'] = "Index";
 $_ADDONLANG['admin_system_option_idn'] = "IDN Support";
 $_ADDONLANG['admin_system_option_version'] = "Version";
@@ -643,7 +658,7 @@ $_ADDONLANG['admin_msg_maintenance_title'] = "Maintenance Mode Activated";
 $_ADDONLANG['admin_msg_maintenance_desc'] = "Maintenance mode is activated. DNS Management for clients is disabled.";
 
 $_ADDONLANG['admin_msg_cron_reset_title'] = "Cron Reset Completed";
-$_ADDONLANG['admin_msg_cron_reset_desc'] = "The rectify cron state has been reset successfully.";
+$_ADDONLANG['admin_msg_cron_reset_desc'] = "The cron state has been reset successfully.";
 
 $_ADDONLANG['admin_msg_update_title'] = "New Update Available";
 $_ADDONLANG['admin_msg_update_desc'] = "A new update v%s (%h) is now available. You can download the update package from the <a href=\"https://ssc.netdistrict.net\">client area</a>.";
