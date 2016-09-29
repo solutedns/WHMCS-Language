@@ -21,24 +21,24 @@ All Rights Reserved
 ####################
 
 // Menu
-$_ADDONLANG['client_manage'] = "Bedienen";
+$_ADDONLANG['client_manage'] = "Verwalten";
 $_ADDONLANG['client_overview'] = "Übersicht";
-$_ADDONLANG['client_defaulttemplate'] = "Standardvorage";
-$_ADDONLANG['client_reversedns'] = "Revers DNS";
+$_ADDONLANG['client_defaulttemplate'] = "Standardvorlage";
+$_ADDONLANG['client_reversedns'] = "RDNS";
 $_ADDONLANG['client_dnssec'] = "DNSsec";
 
 // Titles
 $_ADDONLANG['client_title'] = "DNS Management";
-$_ADDONLANG['client_records'] = "Aufzeichnungen";
+$_ADDONLANG['client_records'] = "Record";
 $_ADDONLANG['client_dnsseckeys'] = "DNSec Schlüssel";
-$_ADDONLANG['client_dsrecords'] = "DS Aufzeichnungen";
-$_ADDONLANG['client_deleterecord'] = "Aufzeichnungen löschen";
-$_ADDONLANG['client_srvassistant'] = "SRV Assistant";
+$_ADDONLANG['client_dsrecords'] = "DS Record";
+$_ADDONLANG['client_deleterecord'] = "Record löschen";
+$_ADDONLANG['client_srvassistant'] = "SRV Assistent";
 $_ADDONLANG['client_deletezone'] = "Zone löschen";
 
 // DNS Management
-$_ADDONLANG['client_addrecord'] = "Aufzeichnungen hinzufügen";
-$_ADDONLANG['client_srvassistant'] = "SRV Assistant";
+$_ADDONLANG['client_addrecord'] = "Record hinzufügen";
+$_ADDONLANG['client_srvassistant'] = "SRV Assistent";
 
 $_ADDONLANG['client_name'] = "Name";
 $_ADDONLANG['client_type'] = "Typ";
@@ -61,11 +61,11 @@ $_ADDONLANG['client_target'] = "Ziel";
 $_ADDONLANG['client_port'] = "Anschluss";
 
 // Zone Management
-$_ADDONLANG['client_addnewzone'] = "Neuen Bereich hinzufügen";
+$_ADDONLANG['client_addnewzone'] = "Neue Zone hinzufügen";
 $_ADDONLANG['client_addupto'] = "Sie können hinzufügen bis zu";
 $_ADDONLANG['client_none'] = "Keine";
-$_ADDONLANG['client_unlimited'] = "Unbegrentzt";
-$_ADDONLANG['client_zones'] = "Zones";
+$_ADDONLANG['client_unlimited'] = "Unbegrenzt";
+$_ADDONLANG['client_zones'] = "Zonen";
 $_ADDONLANG['client_domain'] = "Domain";
 $_ADDONLANG['client_status'] = "Status";
 
@@ -77,10 +77,10 @@ $_ADDONLANG['client_back'] = "Zurück";
 $_ADDONLANG['client_activate'] = "Aktivieren";
 
 // Text
-$_ADDONLANG['client_text_deleterecord'] = "Sie sich sicher, dass Sie diese Aufzeichnung löschen wollen?";
-$_ADDONLANG['client_text_deletezone'] = "Sie sich sicher, dass Sie diesen Bereich löschen wollen?";
-$_ADDONLANG['client_text_templatedesc'] = "Bitte nutzen Si :&lt;domain&gt; als Domain. Dieser Tag wird in die tatsächlich Domain konvertiert.";
-$_ADDONLANG['client_text_activatedesc'] = "Sie können eine Standardvorlage für die Nutzung eines neuen Bereichs oder einer neuen Domain zur Registration auswählen.";
+$_ADDONLANG['client_text_deleterecord'] = "Sie sich sicher, dass Sie diesen Record löschen wollen?";
+$_ADDONLANG['client_text_deletezone'] = "Sie sich sicher, dass Sie diese Zone löschen wollen?";
+$_ADDONLANG['client_text_templatedesc'] = "Bitte nutzen Sie :&lt;domain&gt; als Domain. Dieser Tag wird in die tatsächliche Domain konvertiert.";
+$_ADDONLANG['client_text_activatedesc'] = "Sie können eine Standardvorlage für die Nutzung einer neuen Zone oder einer neuen Domain zur Registration auswählen.";
 
 // DNSsec
 $_ADDONLANG['client_keytag'] = "Schlüssel-Tag";
@@ -90,7 +90,7 @@ $_ADDONLANG['client_publickey'] = "Öffentlicher Schlüssel";
 $_ADDONLANG['client_digesttype'] = "Digest Typ";
 $_ADDONLANG['client_digest'] = "Digest";
 
-$_ADDONLANG['client_none_available'] = "None Available";
+$_ADDONLANG['client_none_available'] = "Nicht verfügbar";
 
 // Reverse Management
 $_ADDONLANG['client_ip'] = "IP";
@@ -100,19 +100,19 @@ $_ADDONLANG['client_hostname'] = "Hostname";
 $_ADDONLANG['client_entersearch'] = "Bitte Suchbegriff eingeben...";
 
 // DataTable Records
-$_ADDONLANG['client_records_sEmptyTable'] = "Keine Aufzeichnungen gefunden";
-$_ADDONLANG['client_records_sInfo'] = "Zeige _START_ to _END_ of _TOTAL_ Aufzeichnungen an";
-$_ADDONLANG['client_records_sInfoEmpty'] = "Zeige 0 bis 0 von 0 Aufzeichnungen an";
-$_ADDONLANG['client_records_sInfoFiltered'] = "(gefiltert von _MAX_ Aufzeichnungen insgesamt)";
+$_ADDONLANG['client_records_sEmptyTable'] = "Keine Eintäge gefunden";
+$_ADDONLANG['client_records_sInfo'] = "Zeige _START_ to _END_ von _TOTAL_ Einträgen an";
+$_ADDONLANG['client_records_sInfoEmpty'] = "Zeige 0 bis 0 von 0 Records an";
+$_ADDONLANG['client_records_sInfoFiltered'] = "(gefiltert von _MAX_ Records insgesamt)";
 $_ADDONLANG['client_records_sInfoPostFix'] = "";
 $_ADDONLANG['client_records_sInfoThousands'] = ",";
 $_ADDONLANG['client_records_sLoadingRecords'] = "Lade...";
 $_ADDONLANG['client_records_sProcessing'] = "Verarbeite...";
-$_ADDONLANG['client_records_sZeroRecords'] = "Keine Aufzeichnungen gefunden";
+$_ADDONLANG['client_records_sZeroRecords'] = "Keine Records gefunden";
 
 // DatTable Table
 $_ADDONLANG['client_table_sEmptyTable'] = "Keine Domains gefunden";
-$_ADDONLANG['client_table_sInfo'] = "Zeige _START_ to _END_ of _TOTAL_ Domain  an";
+$_ADDONLANG['client_table_sInfo'] = "Zeige _START_ to _END_ von _TOTAL_ Domains an";
 $_ADDONLANG['client_table_sInfoEmpty'] = "Zeige 0 bis 0 von 0 Domains an";
 $_ADDONLANG['client_table_sInfoFiltered'] = "(gefiltert von _MAX_ Domains insgesamt)";
 $_ADDONLANG['client_table_sInfoPostFix'] = "";
@@ -146,14 +146,14 @@ $_ADDONLANG['client_reverse_sPrevious'] = "Vorherige";
 
 // Access messages
 $_ADDONLANG['client_title_maintenance'] = "DNS Management nicht verfügbar!";
-$_ADDONLANG['client_desc_maintenance'] = "Das DNS Management ist momentan aufgrund von Wartungsarbeiten nicht verfügbar. Versuchen Sie es später!";
+$_ADDONLANG['client_desc_maintenance'] = "Das DNS Management ist momentan aufgrund von Wartungsarbeiten nicht verfügbar. Versuchen Sie es später noch einmal!";
 
-$_ADDONLANG['client_title_pdnserror'] = "Unfähig DNS-Einstellungen zu ändern!";
-$_ADDONLANG['client_desc_pdnserror'] = "Zurzeit ist es unmöglich die DNS-Einstellungen Ihrer Domain zu ändern. <br/> Versuchen Sie es später. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
-$_ADDONLANG['client_desc_pdnserror2'] = "Zurzeit ist es unmöglich die DNS-Einstellungen Ihres Kontos zu ändern. Versuchen Sie es später. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
+$_ADDONLANG['client_title_pdnserror'] = "Nicht mögglich DNS-Einstellungen zu ändern!";
+$_ADDONLANG['client_desc_pdnserror'] = "Zurzeit ist es nicht möglich die DNS-Einstellungen Ihrer Domain zu ändern. <br/> Versuchen Sie es später noch einmal. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
+$_ADDONLANG['client_desc_pdnserror2'] = "Zurzeit ist es nicht möglich die DNS-Einstellungen Ihres Kontos zu ändern. Versuchen Sie es später noch einmal. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
 
 $_ADDONLANG['client_title_permission'] = "Zugriff verweigert!";
-$_ADDONLANG['client_desc_permission'] = "Sie verfügen nicht über die notwendigen Rechte, auf diesen Bereich zu zugreifen!";
+$_ADDONLANG['client_desc_permission'] = "Sie verfügen nicht über die notwendigen Rechte um auf diesen Bereich zugreifen zu können!";
 $_ADDONLANG['client_slavezone_error'] = "Dieser Bereich ist anscheinend ein Slave-Bereich, der nicht bearbeitet werden kann! Wenn dies falsch ist, kontaktieren Sie bitte den Support.";
 
 
@@ -168,7 +168,7 @@ $_ADDONLANG['admin_eula_missing'] = "Die EULA Datei scheint zu fehlen, bitte lad
 $_ADDONLANG['admin_menu_overview'] = "Übersicht";
 $_ADDONLANG['admin_menu_templates'] = "Vorlagen";
 $_ADDONLANG['admin_menu_settings'] = "Einstellungen";
-$_ADDONLANG['admin_menu_records'] = "Aufzeichnungen";
+$_ADDONLANG['admin_menu_records'] = "Records";
 $_ADDONLANG['admin_menu_accessibility'] = "Erreichbarkeit";
 $_ADDONLANG['admin_menu_automation'] = "Automatisierung";
 $_ADDONLANG['admin_menu_assignment'] = "Aufgabe";
@@ -212,21 +212,21 @@ $_ADDONLANG['admin_suspended'] = "Gesperrt";
 $_ADDONLANG['admin_fraud'] = "Betrug";
 
 //Accessibility
-$_ADDONLANG['admin_accessibility_title_accessibility'] = "Accessibility";
-$_ADDONLANG['admin_accessibility_title_clientzones'] = "Client Zones";
-$_ADDONLANG['admin_accessibility_title_menu'] = "Client Menus";
+$_ADDONLANG['admin_accessibility_title_accessibility'] = "Zugänglichkeit";
+$_ADDONLANG['admin_accessibility_title_clientzones'] = "Kundenzonen";
+$_ADDONLANG['admin_accessibility_title_menu'] = "Kundenmenüs";
 $_ADDONLANG['admin_accessibility_title_admin'] = "Admin";
 
 $_ADDONLANG['admin_accessibility_option_disableprimarymenu'] = "Hauptmenü deaktivieren";
 $_ADDONLANG['admin_accessibility_option_disablesecondarymenu'] = "Managementmenü deaktivieren";
-$_ADDONLANG['admin_accessibility_option_hidesoa'] = "SOA Aufzeichnung verstecken";
-$_ADDONLANG['admin_accessibility_option_disablens'] = "NS Aufzeichnung deaktivieren";
+$_ADDONLANG['admin_accessibility_option_hidesoa'] = "SOA Record verstecken";
+$_ADDONLANG['admin_accessibility_option_disablens'] = "NS Record deaktivieren";
 $_ADDONLANG['admin_accessibility_option_presetttl'] = "Nutze das voreingestellte TTL-Feld";
-$_ADDONLANG['admin_accessibility_option_hideassist'] = "Klienten DNS Assistant verstecken";
+$_ADDONLANG['admin_accessibility_option_hideassist'] = "Kunden DNS Assistenten verstecken";
 $_ADDONLANG['admin_accessibility_option_dnspagination'] = "DNS Numerierung";
 
-$_ADDONLANG['admin_accessibility_option_clientzones'] = "Klientenbereiche aktivieren";
-$_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Klientenvorlage aktivieren";
+$_ADDONLANG['admin_accessibility_option_clientzones'] = "Kundenbereich aktivieren";
+$_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Kundenvorlagen aktivieren";
 $_ADDONLANG['admin_accessibility_option_clienthealth'] = "Gesundheitszustand aktivieren";
 $_ADDONLANG['admin_accessibility_option_clientreverse'] = "Revers-Management";
 $_ADDONLANG['admin_accessibility_option_zonelimit'] = "Bereichlimit";
@@ -234,21 +234,21 @@ $_ADDONLANG['admin_accessibility_option_zonelimit'] = "Bereichlimit";
 $_ADDONLANG['admin_accessibility_option_adminreverse'] = "Revers aktivieren";
 $_ADDONLANG['admin_accessibility_option_adminhealth'] = "Gesundheits-Icon";
 
-$_ADDONLANG['admin_accessibility_desc_disableprimarymenu'] = "Deaktivieren Sie im Klientenbereich den DNS-Management Eintrag im Hauptmenü.";
-$_ADDONLANG['admin_accessibility_desc_disablesecondarymenu'] = "Deaktivieren Sie im Klientenbereich den DNS-Management Eintrag im Hauptmenü der Domain und der Produktdetail-Seite.";
-$_ADDONLANG['admin_accessibility_desc_hidesoa'] = "SOA Aufzeichnung für Nutzer verstecken. Wenn Sie die SOA Aufzeichnung anzeigen, werden diese immer deaktiviert.";
+$_ADDONLANG['admin_accessibility_desc_disableprimarymenu'] = "Deaktivieren Sie im Kundenbereich den DNS-Management Eintrag im Hauptmenü.";
+$_ADDONLANG['admin_accessibility_desc_disablesecondarymenu'] = "Deaktivieren Sie im Kundenbereich den DNS-Management Eintrag im Hauptmenü der Domain und der Produktdetail-Seite.";
+$_ADDONLANG['admin_accessibility_desc_hidesoa'] = "SOA Records für Nutzer verstecken. Wenn Sie die SOA Aufzeichnung anzeigen, werden diese immer deaktiviert.";
 $_ADDONLANG['admin_accessibility_desc_disablens'] = "Wenn angekreuzt, werden die Namenserver für die Nutzer nicht angezeigt.";
 $_ADDONLANG['admin_accessibility_desc_presetttl'] = "Nutzen Sie das voreingestellte TTL Dropdown-Menü anstatt einer Textbox.";
-$_ADDONLANG['admin_accessibility_desc_hideassist'] = "Kreuzen Sie diese Checkbox an, um den DNS-Assistent für Ihre Nutzer zu verstecken.";
-$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Wechseln Sie zur Numerierung, wenn der Bereich die Aufzeichnungen überschreiten. (0 = Immer)";
+$_ADDONLANG['admin_accessibility_desc_hideassist'] = "Kreuzen Sie diese Checkbox an, um den DNS-Assistenten für Ihre Nutzer zu verstecken.";
+$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Wechseln Sie zur Numerierung, wenn der Bereich die Records überschreiten. (0 = Immer)";
 
-$_ADDONLANG['admin_accessibility_desc_clientzones'] = "Auswählen, um das Bereichmanagement für Klienten zu aktivieren.";
-$_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Auswählen, um Standardvorlagen für Klienten zu aktivieren.";
-$_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Auswählen, um den Gesundheitszustand im Klientenbereich zu aktivieren.";
-$_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Anklicken, sodass Klieten den Revers-Hostname für zugewiesene IP-Adresse managen können.";
-$_ADDONLANG['admin_accessibility_desc_zonelimit'] = "Beschränken Sie die maximalen Bereiche für die Klienten. (0 = unbegrenzt, -1 = keine)";
+$_ADDONLANG['admin_accessibility_desc_clientzones'] = "Auswählen, um das Bereichmanagement für Kunden zu aktivieren.";
+$_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Auswählen, um Standardvorlagen für Kunden zu aktivieren.";
+$_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Auswählen, um den Gesundheitszustand im Kundenbereich zu aktivieren.";
+$_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Anklicken, sodass Kunden den Revers-Hostname für zugewiesene IP-Adresse verwalten können.";
+$_ADDONLANG['admin_accessibility_desc_zonelimit'] = "Beschränken Sie die maximalen Zonen für die Kunden. (0 = unbegrenzt, -1 = keine)";
 
-$_ADDONLANG['admin_accessibility_desc_adminreverse'] = "Auswählen, um die Revers-Bereiche in der Admin-Area zu aktivieren.";
+$_ADDONLANG['admin_accessibility_desc_adminreverse'] = "Auswählen, um die Revers-Zonen in der Admin-Area zu aktivieren.";
 $_ADDONLANG['admin_accessibility_desc_adminhealth'] = "Zeigt das Gesundheits-Icon in der Admin-Domain-Übersicht.";
 
 // Automation
@@ -256,9 +256,9 @@ $_ADDONLANG['admin_automation_title_zones'] = "Bereiche";
 $_ADDONLANG['admin_automation_title_dnsmanagement'] = "DNS Management";
 $_ADDONLANG['admin_automation_title_admin'] = "Admin";
 
-$_ADDONLANG['admin_automation_option_create'] = "Automatisch Bereich erstellen";
+$_ADDONLANG['admin_automation_option_create'] = "Zone automatisch erstellen";
 $_ADDONLANG['admin_automation_option_maintenance'] = "Automatische Wartung";
-$_ADDONLANG['admin_automation_option_delete'] = "Automatisch Bereich löschen";
+$_ADDONLANG['admin_automation_option_delete'] = "Zone automatisch löschen";
 $_ADDONLANG['admin_automation_option_todo'] = "Automatisch zu Objekten hinzufügen";
 
 $_ADDONLANG['admin_automation_option_enabledns'] = "DNS Management automatisch aktivieren";
@@ -266,9 +266,9 @@ $_ADDONLANG['admin_automation_option_health'] = "Gesundheitssystem aktivieren";
 
 $_ADDONLANG['admin_automation_option_products'] = "Aktivieren für DNS Produkte";
 
-$_ADDONLANG['admin_automation_desc_create'] = "Automastisch neue Bereich für Domain-Aufträge nach dem Kauf erstellen.";
+$_ADDONLANG['admin_automation_desc_create'] = "Automastisch neue Zonen für Domain-Aufträge nach dem Kauf erstellen.";
 $_ADDONLANG['admin_automation_desc_maintenance'] = "Automatisch Local-Index beibehalten.";
-$_ADDONLANG['admin_automation_desc_delete'] = "Automatisch Bereich der Domains und Produkte mit ausgewähltem Zustand löschen.";
+$_ADDONLANG['admin_automation_desc_delete'] = "Zone der Domains und Produkte automatisch mit ausgewähltem Zustand löschen.";
 $_ADDONLANG['admin_automation_desc_deletewhmcs'] = "Wenn Domain/Produkt entfernt in WHMCS wurde.";
 
 $_ADDONLANG['admin_automation_desc_enabledns'] = "Automatisch WHMCS DNS Management für neue Bereich aktivieren.";
@@ -290,19 +290,19 @@ $_ADDONLANG['admin_handling_dnssec'] = "DNSsec aktivieren";
 $_ADDONLANG['admin_handling_recordlimit'] = "Aufzeichnungs-Limit";
 $_ADDONLANG['admin_handling_defaultcluster'] = "Standard-Cluster";
 
-$_ADDONLANG['admin_handling_autosave'] = "Automatisches Speicher der Felder";
+$_ADDONLANG['admin_handling_autosave'] = "Automatisches Speichern der Felder";
 
-$_ADDONLANG['admin_handling_desc_selectcreated'] = "Produkte auswählen, für die ein DNS-Bereich erstellt werden soll.";
-$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Produkte auswählen, für die kein DNS-Bereich für verknüpfte Domainregistrierung oder Transfer erstellt werden soll.";
-$_ADDONLANG['admin_handling_desc_recordlimit'] = "Maximale Aufzeichnungen eines Bereichs beschränken (0 = unbegrenzt).";
-$_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Standesbeamte für einen DNS-Bereich <u>sollen nicht</u> erstellt werden.";
-$_ADDONLANG['admin_handling_desc_nameserver'] = "Wählen Sie, wie die Bereiche in den Clustern der Namenserver verteilt werden sollen.";
+$_ADDONLANG['admin_handling_desc_selectcreated'] = "Produkte auswählen, für die eine DNS-Zone erstellt werden soll.";
+$_ADDONLANG['admin_handling_desc_selectignoreproduct'] = "Produkte auswählen, für die keine DNS-Zone für verknüpfte Domainregistrierung oder Transfer erstellt werden soll.";
+$_ADDONLANG['admin_handling_desc_recordlimit'] = "Maximale Aufzeichnungen einer Zone beschränken (0 = unbegrenzt).";
+$_ADDONLANG['admin_handling_desc_selectignoreregistrar'] = "Wähle für welche Registrare Standesbeamte <u>keine</u> DNS-Zone erstellt werden sollen.";
+$_ADDONLANG['admin_handling_desc_nameserver'] = "Wählen Sie, wie die Zonen in den Clustern der Namenserver verteilt werden sollen.";
 
 $_ADDONLANG['admin_handling_option_default'] = "Standard-Nameserver";
 $_ADDONLANG['admin_handling_desc_default'] = "Wählen Sie, welche Namenserver als Standard verwendet werden sollen.";
 
-$_ADDONLANG['admin_handling_option_distribution'] = "Bereich-Verteilung";
-$_ADDONLANG['admin_handling_desc_distribution'] = "Wählen Sie, wie die Bereiche in den Clustern der Namenserver verteilt werden sollen.";
+$_ADDONLANG['admin_handling_option_distribution'] = "Zonen-Verteilung";
+$_ADDONLANG['admin_handling_desc_distribution'] = "Wählen Sie, wie die Zonen in den Clustern der Namenserver verteilt werden sollen.";
 $_ADDONLANG['admin_handling_option_default'] = "Standard";
 $_ADDONLANG['admin_handling_option_equal'] = "Gleichwertig";
 
@@ -316,16 +316,16 @@ $_ADDONLANG['admin_license_product'] = "Produkt";
 $_ADDONLANG['admin_license_edition'] = "Edition";
 $_ADDONLANG['admin_license_status'] = "Status";
 $_ADDONLANG['admin_license_licensedto'] = "Lizenz für";
-$_ADDONLANG['admin_license_brandremoval'] = "Marke entfernen";
-$_ADDONLANG['admin_license_zonelimit'] = "Bereichslimit";
+$_ADDONLANG['admin_license_brandremoval'] = "Branding entfernen";
+$_ADDONLANG['admin_license_zonelimit'] = "Zonenlimit";
 $_ADDONLANG['admin_license_unlimited'] = "Unbegrenzt";
-$_ADDONLANG['admin_license_zones'] = "Bereiche";
+$_ADDONLANG['admin_license_zones'] = "Zonen";
 $_ADDONLANG['admin_license_addons'] = "Addons";
 $_ADDONLANG['admin_license_none'] = "Keine";
 $_ADDONLANG['admin_license_expires'] = "Läuft ab";
 $_ADDONLANG['admin_license_validdomains'] = "Gültige Domains";
 $_ADDONLANG['admin_license_validips'] = "Gültige IPs";
-$_ADDONLANG['admin_license_validdirectory'] = "Gültigs-Verzeichnis";
+$_ADDONLANG['admin_license_validdirectory'] = "Gültiges Verzeichnis";
 
 $_ADDONLANG['admin_license_licensekey'] = "Lizenzschlüssel";
 
@@ -339,18 +339,18 @@ $_ADDONLANG['admin_logs_clearlogs'] = "Logs leeren";
 
 
 // DNS Management
-$_ADDONLANG['admin_manage_tab_records'] = "Aufzeichnungen";
+$_ADDONLANG['admin_manage_tab_records'] = "Records";
 $_ADDONLANG['admin_manage_tab_dnssec'] = "DNSsec";
 $_ADDONLANG['admin_manage_tab_health'] = "Gesundheit";
 $_ADDONLANG['admin_manage_tab_settings'] = "Einstellungen";
 
 $_ADDONLANG['admin_manage_title_zone'] = "Bereich";
-$_ADDONLANG['admin_manage_title_client'] = "Klient";
+$_ADDONLANG['admin_manage_title_client'] = "Kunden";
 $_ADDONLANG['admin_manage_title_email'] = "E-mail";
 $_ADDONLANG['admin_manage_title_dnsseckeys'] = "DNSsec Schlüssel";
 $_ADDONLANG['admin_manage_title_dsrecords'] = "DS Aufzeichnungen";
 $_ADDONLANG['admin_manage_title_health'] = "Gesundheit";
-$_ADDONLANG['admin_manage_title_records'] = "Aufzeichnungen";
+$_ADDONLANG['admin_manage_title_records'] = "Records";
 
 $_ADDONLANG['admin_manage_title_actioncompleted'] = "Aktionen abgeschlossen";
 $_ADDONLANG['admin_manage_title_actioncompleted_reload'] = "Laden der DNSsec Schlüssel abgeschlossen.";
@@ -380,7 +380,7 @@ $_ADDONLANG['admin_manage_target'] = "Ziel";
 $_ADDONLANG['admin_manage_port'] = "Port";
 
 $_ADDONLANG['admin_manage_dnssec_addnewkey'] = "Neuen DNSsec Schlüssel hinzufügen";
-$_ADDONLANG['admin_manage_dnssec_flag'] = "Flagge";
+$_ADDONLANG['admin_manage_dnssec_flag'] = "Flag";
 $_ADDONLANG['admin_manage_dnssec_ksk'] = "KSK";
 $_ADDONLANG['admin_manage_dnssec_zsk'] = "ZSK";
 $_ADDONLANG['admin_manage_dnssec_bits'] = "Bits";
@@ -392,21 +392,21 @@ $_ADDONLANG['admin_manage_health_warning'] = "Warnung";
 $_ADDONLANG['admin_manage_health_error'] = "Fehler";
 $_ADDONLANG['admin_manage_health_noissues'] = "Keine bekannten Gesundheitsprobleme.";
 
-$_ADDONLANG['admin_manage_records_addrecord'] = "Aufzeichnung hinzufügen";
-$_ADDONLANG['admin_manage_records_srvassist'] = "SRV Assistant";
+$_ADDONLANG['admin_manage_records_addrecord'] = "Record hinzufügen";
+$_ADDONLANG['admin_manage_records_srvassist'] = "SRV Assistent";
 
 $_ADDONLANG['admin_manage_records_manage'] = "Verwalten";
 $_ADDONLANG['admin_manage_records_applytemplate'] = "Vorlage anwenden";
 $_ADDONLANG['admin_manage_records_selecttemplate'] = "Vorlage auswählen";
-$_ADDONLANG['admin_manage_records_importzone'] = "Bereich importieren";
-$_ADDONLANG['admin_manage_records_exportzone'] = "Bereich exportieren";
-$_ADDONLANG['admin_manage_records_deleterecord'] = "Aufzeichnung löschen";
-$_ADDONLANG['admin_manage_records_deleteselected'] = "Aufzeichnung auswählen";
+$_ADDONLANG['admin_manage_records_importzone'] = "Zone importieren";
+$_ADDONLANG['admin_manage_records_exportzone'] = "Zone exportieren";
+$_ADDONLANG['admin_manage_records_deleterecord'] = "Record löschen";
+$_ADDONLANG['admin_manage_records_deleteselected'] = "Record auswählen";
 
 
-$_ADDONLANG['admin_manage_text_deleterecord'] = "Sind Sie sicher, dass Sie diese Aufzeichnung löschen mlchten?";
-$_ADDONLANG['admin_manage_text_importzone'] = "Eine Bereichsdatei importieren. Importiere Aufzeichnungen werden vom System verwaltet.";
-$_ADDONLANG['admin_manage_text_importzoneoverwrite'] = "Aktuellen Bereich überschreiben, alle Aufzeichnungen werden vor dem Import gelöscht.";
+$_ADDONLANG['admin_manage_text_deleterecord'] = "Sind Sie sicher, dass Sie diesen Record löschen möchten?";
+$_ADDONLANG['admin_manage_text_importzone'] = "Eine Zonendatei importieren. Importiere Records werden vom System verwaltet.";
+$_ADDONLANG['admin_manage_text_importzoneoverwrite'] = "Aktuelle Zone überschreiben, alle Records werden vor dem Import gelöscht.";
 
 $_ADDONLANG['admin_manage_manage'] = "Verwalten";
 $_ADDONLANG['admin_manage_edit'] = "Bearbeiten";
@@ -443,7 +443,7 @@ $_ADDONLANG['admin_nameservers_option_port'] = "Port";
 $_ADDONLANG['admin_nameservers_option_user'] = "Benutzer";
 $_ADDONLANG['admin_nameservers_option_password'] = "Passwort";
 $_ADDONLANG['admin_nameservers_option_database'] = "Datenbank";
-$_ADDONLANG['admin_nameservers_option_zonetype'] = "Bereichstyp";
+$_ADDONLANG['admin_nameservers_option_zonetype'] = "Zonentyp";
 
 $_ADDONLANG['admin_nameservers_option_nameserver1'] = "Nameserver 1";
 $_ADDONLANG['admin_nameservers_option_nameserver2'] = "Nameserver 2";
@@ -457,28 +457,28 @@ $_ADDONLANG['admin_nameservers_option_privatekey'] = "Privatschlüssel";
 
 $_ADDONLANG['admin_nameservers_option_pdnsversion'] = "PowerDNS version";
 $_ADDONLANG['admin_nameservers_option_enablednssec'] = "DNSsec aktivieren";
-$_ADDONLANG['admin_nameservers_option_autorectify'] = "Automatisch Bereich korrigieren";
+$_ADDONLANG['admin_nameservers_option_autorectify'] = "Automatisch Zone korrigieren";
 $_ADDONLANG['admin_nameservers_option_autoenablednssec'] = "Automatisch DNSsec aktivieren";
 $_ADDONLANG['admin_nameservers_option_setnsec3'] = "NSEC3 festlegen";
-$_ADDONLANG['admin_nameservers_option_showtoclient'] = "Zeige Klienten den Schlüssel";
+$_ADDONLANG['admin_nameservers_option_showtoclient'] = "Zeige Kunden den Schlüssel";
 
 $_ADDONLANG['admin_nameservers_desc_host'] = "Domain oder IP der Remote MySQL Server enthält die PowerDNS Bereiche.";
 $_ADDONLANG['admin_nameservers_desc_port'] = "Der Standard MySQL Port ist 3306.";
-$_ADDONLANG['admin_nameservers_desc_zonetype'] = "Wählen Sie den Bereichstypen, den Sie für den Transfer auf Ihren Nameserver benötigen.";
+$_ADDONLANG['admin_nameservers_desc_zonetype'] = "Wählen Sie den ZOnentypen, den Sie für den Transfer auf Ihren Nameserver benötigen.";
 
-$_ADDONLANG['admin_nameservers_desc_nameserver1'] = "Der primäre Nameserver wird ebenfalls in der SOA Aufzeichnung genutzt.";
+$_ADDONLANG['admin_nameservers_desc_nameserver1'] = "Der primäre Nameserver wird ebenfalls in der SOA Records genutzt.";
 $_ADDONLANG['admin_nameservers_desc_nameserver6'] = "Wenn weniger Nameserver genutzt werden, lassen Sie die Extrafelder leer.";
 
-$_ADDONLANG['admin_nameservers_desc_sshhost'] = "Domain oder IP des Remote-Servers enthält PowerDNS Bereiche.";
+$_ADDONLANG['admin_nameservers_desc_sshhost'] = "Domain oder IP des Remote-Servers enthält PowerDNS Zonen.";
 $_ADDONLANG['admin_nameservers_desc_sshport'] = "Standard SSH port is 22.";
 
 $_ADDONLANG['admin_nameservers_desc_useprivatekey'] = "Auwählen, um Privatschlüssel zum Einloggen ins SHH zu nutzen, anstatt des Passworts.";
 
 $_ADDONLANG['admin_nameservers_desc_enablednssec'] = "DNSsec Support aktivieren.";
-$_ADDONLANG['admin_nameservers_desc_autorectify'] = "Bereiche müssen zum Fortfahren korrigiert werden.";
-$_ADDONLANG['admin_nameservers_desc_autoenablednssec'] = "Automatisch neu erstellte Bereiche sichern.";
+$_ADDONLANG['admin_nameservers_desc_autorectify'] = "Zonen müssen zum Fortfahren korrigiert werden.";
+$_ADDONLANG['admin_nameservers_desc_autoenablednssec'] = "Automatisch neu erstellte Zonen sichern.";
 $_ADDONLANG['admin_nameservers_desc_setnsec3'] = "Nutzen Sie NSEC3 anstatt der Standard NSEC.";
-$_ADDONLANG['admin_nameservers_desc_showtoclient'] = "DNSsec Schlüssel den Klienten anzeigen.";
+$_ADDONLANG['admin_nameservers_desc_showtoclient'] = "DNSsec Schlüssel den Kunden anzeigen.";
 
 $_ADDONLANG['admin_nameservers_error'] = "Fehlerdetails";
 
@@ -496,7 +496,7 @@ $_ADDONLANG['admin_overview_title_standalone']  = "Selbstständig";
 $_ADDONLANG['admin_overview_title_reverse']  = "Revers";
 $_ADDONLANG['admin_overview_title_unassigned']  = "Nicht zugewiesen";
 
-$_ADDONLANG['admin_overview_addzone']  = "Bereich hinzufügen";
+$_ADDONLANG['admin_overview_addzone']  = "Zone hinzufügen";
 $_ADDONLANG['admin_overview_delete']  = "Löschen";
 $_ADDONLANG['admin_overview_zone']  = "Bereich ";
 $_ADDONLANG['admin_overview_domain']  = "Domain";
@@ -504,9 +504,9 @@ $_ADDONLANG['admin_overview_product']  = "Produkt";
 $_ADDONLANG['admin_overview_reverse']  = "Revers";
 $_ADDONLANG['admin_overview_standalone']  = "Selbstständig";
 
-$_ADDONLANG['admin_overview_zonetype']  = "Bereichstyp";
+$_ADDONLANG['admin_overview_zonetype']  = "Zonentyp";
 $_ADDONLANG['admin_overview_selecttype']  = "Auswahltyp";
-$_ADDONLANG['admin_overview_ipaddresszone']  = "IP-Adresse oder Bereichsname";
+$_ADDONLANG['admin_overview_ipaddresszone']  = "IP-Adresse oder Zonenname";
 $_ADDONLANG['admin_overview_client']  = "Klient";
 
 $_ADDONLANG['admin_overview_table_id']  = "ID";
@@ -514,17 +514,17 @@ $_ADDONLANG['admin_overview_table_domain']  = "Domain";
 $_ADDONLANG['admin_overview_table_status']  = "Status";
 $_ADDONLANG['admin_overview_table_date']  = "Datum";
 
-$_ADDONLANG['admin_overview_text_deletezone']  = "Sind Sie sicher, dass Sie diese Aufzeichnung löschen möchten?";
+$_ADDONLANG['admin_overview_text_deletezone']  = "Sind Sie sicher, dass Sie diesen Record löschen möchten?";
 
 $_ADDONLANG['admin_loading_data'] = "Lade Daten vom Server...";
 $_ADDONLANG['admin_none_available'] = "Keine verfügbar";
 
 // Records
-$_ADDONLANG['admin_records_title_allowed'] = "Erlaubte Aufzeichnungen";
-$_ADDONLANG['admin_records_title_defaultsoa'] = "Standard SOA Aufzeichnungen";
-$_ADDONLANG['admin_records_title_limit'] = "Aufzeichnungslimit";
+$_ADDONLANG['admin_records_title_allowed'] = "Erlaubte Records";
+$_ADDONLANG['admin_records_title_defaultsoa'] = "Standard SOA Records";
+$_ADDONLANG['admin_records_title_limit'] = "Recordlimit";
 
-$_ADDONLANG['admin_records_option_allowedtypes'] = "Erlaubte Aufzeichnungstypen";
+$_ADDONLANG['admin_records_option_allowedtypes'] = "Erlaubte Recordtypen";
 
 $_ADDONLANG['admin_records_option_hostmaster'] = "Hostmaster";
 $_ADDONLANG['admin_records_option_serial'] = "Serial";
@@ -533,12 +533,12 @@ $_ADDONLANG['admin_records_option_retry'] = "Retry";
 $_ADDONLANG['admin_records_option_expire'] = "Ablaufen";
 $_ADDONLANG['admin_records_option_ttl'] = "Mindest TTL";
 
-$_ADDONLANG['admin_records_option_recordlimit'] = "Aufzeichnungslimit";
+$_ADDONLANG['admin_records_option_recordlimit'] = "Recordlimit";
 
 $_ADDONLANG['admin_records_desc_hostmaster'] = "&lt;domain&gt; hinzufügen, um die Domain als Hostmaster zu nutzen.";
 $_ADDONLANG['admin_records_desc_serial'] = "Lassen Sie dies als Standard, falls Sie nicht genau wissen, was es bezweckt!";
 
-$_ADDONLANG['admin_records_desc_recordlimit'] = "Maximale Aufzeichnungen in eiem Bereich beschränken (0 = unbegrenzt).";
+$_ADDONLANG['admin_records_desc_recordlimit'] = "Maximale Records in einer Zone beschränken (0 = unbegrenzt).";
 
 $_ADDONLANG['admin_records_select_default'] = "Standard (yyyymmddcc)";
 $_ADDONLANG['admin_records_select_epoch'] = "Epoche (Unix Zeit)";
@@ -624,8 +624,8 @@ $_ADDONLANG['admin_template_option_defaultttl'] = "Standard TTL";
 $_ADDONLANG['admin_template_option_soattl'] = "SOA TTL";
 $_ADDONLANG['admin_template_option_nsttl'] = "NS TTL";
 
-$_ADDONLANG['admin_template_desc_defaultipv4'] = "Für Bezeichnung: &lt;default-ipv4&gt;.";
-$_ADDONLANG['admin_template_desc_defaultipv6'] = "Für Bezeichnung: &lt;default-ipv6&gt;.";
+$_ADDONLANG['admin_template_desc_defaultipv4'] = "Für Record: &lt;default-ipv4&gt;.";
+$_ADDONLANG['admin_template_desc_defaultipv6'] = "Für Record: &lt;default-ipv6&gt;.";
 
 $_ADDONLANG['admin_template_desc_assignedproducts'] = "Produkte können nur ausgewählt werden, wenn diese nicht für eine andere Vorlage genutzt werden. Sie können mehrere Produkte auswählen.";
 $_ADDONLANG['admin_template_desc_cannotassign'] = "Produkt kann nicht für die Standardvorlage ausgewählt werden.";
@@ -680,85 +680,85 @@ $_ADDONLANG['admin_msg_clearlogs_desc'] = "Alle SoluteDNS Logs wurden erfolgreic
 #####################
 
 // Titles
-$_ADDONLANG['global_title_system_error'] = "Unfähig die DNS-Einstellungen zu ändern!";
+$_ADDONLANG['global_title_system_error'] = "Kann die DNS-Einstellungen nicht ändern!";
 $_ADDONLANG['global_title_system_permission'] = "Zugriff verweigert!";
 $_ADDONLANG['global_title_system_invalid'] = "Ungültige Anfrage";
 $_ADDONLANG['global_title_unauthorized'] = "Nicht autorisierte Anfrage";
 
-$_ADDONLANG['global_title_dns_record_edited'] = "Aufzeichnungen wurden geändert!";
-$_ADDONLANG['global_title_dns_record_added'] = "Aufzeichnungen wurden hinzugefügt!";
-$_ADDONLANG['global_title_dns_record_deleted'] = "Aufzeichnungen wurden gelöscht!";
-$_ADDONLANG['global_title_dns_record_limit'] = "Die maximale Anzahl an Aufzeichnungen wurde erreicht!";
-$_ADDONLANG['global_title_dns_zone_limit'] = "Die maximale Anzahl an Bereichn wurde erreicht!";
-$_ADDONLANG['global_title_dns_error'] = "Unfähig Änderungen durchzuführen";
+$_ADDONLANG['global_title_dns_record_edited'] = "Records wurden geändert!";
+$_ADDONLANG['global_title_dns_record_added'] = "Records wurden hinzugefügt!";
+$_ADDONLANG['global_title_dns_record_deleted'] = "Records wurden gelöscht!";
+$_ADDONLANG['global_title_dns_record_limit'] = "Die maximale Anzahl an Records wurde erreicht!";
+$_ADDONLANG['global_title_dns_zone_limit'] = "Die maximale Anzahl an Zonen wurde erreicht!";
+$_ADDONLANG['global_title_dns_error'] = "Kann Änderungen nicht durchzuführen";
 $_ADDONLANG['global_title_dns_invalid_hostname'] = "Ungültiger Hostname";
 $_ADDONLANG['global_title_dns_invalid_domain'] = "Ungültiger Domain";
 $_ADDONLANG['global_title_dns_reverse_updated'] = "Revers-Hostname aktualisiert";
-$_ADDONLANG['global_title_dns_zone_exists'] = "Bereich nicht erreichbar";
+$_ADDONLANG['global_title_dns_zone_exists'] = "ZOne nicht erreichbar";
 $_ADDONLANG['global_title_dns_zone_created'] = "Zone erstellt";
-$_ADDONLANG['global_title_dns_zone_unable_delete'] = "Unfäfähig Bereich zu löschen";
-$_ADDONLANG['global_title_dns_zone_exception_delete'] = "Bereich mit Ausnahmen gelöscht";
-$_ADDONLANG['global_title_dns_zone_deleted'] = "Bereich gelöscht";
-$_ADDONLANG['global_title_dns_zone_imported'] = "Bereich importiert";
+$_ADDONLANG['global_title_dns_zone_unable_delete'] = "Kann die Zone nicht löschen";
+$_ADDONLANG['global_title_dns_zone_exception_delete'] = "Zone mit Ausnahmen gelöscht";
+$_ADDONLANG['global_title_dns_zone_deleted'] = "Zone gelöscht";
+$_ADDONLANG['global_title_dns_zone_imported'] = "Zone importiert";
 
 $_ADDONLANG['global_title_template_applied'] = "Vorlage angewndet";
 
 // Desc
-$_ADDONLANG['global_desc_system_dbnotavailable'] = "Zurzeit ist es unmöglich die DNS-Einstellungen Ihrer Domain zu ändern. Versuchen Sie es später. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
-$_ADDONLANG['global_desc_system_dbnotavailable_admin'] = "Die Nameserver-Datenbank ist nicht verfügbar, unfähig Änderungen auszuführen!";
+$_ADDONLANG['global_desc_system_dbnotavailable'] = "Zurzeit ist es nicht möglich die DNS-Einstellungen Ihrer Domain zu ändern. Versuchen Sie es später erneut. Wenn dieses Problem  weiterhin besteht, kontaktieren Sie bitte unseren Support!";
+$_ADDONLANG['global_desc_system_dbnotavailable_admin'] = "Die Nameserver-Datenbank ist nicht verfügbar, kann Änderungen nicht durchführen!";
 $_ADDONLANG['global_desc_system_slavezone'] = "Dieser Bereich ist anscheinend ein Slave-Bereich, der nicht bearbeitet werden kann! Wenn dies falsch ist, kontaktieren Sie bitte den Support.";
-$_ADDONLANG['global_desc_system_permission'] = "Sie verfügen nicht über die nötigen Rechte, in diesen Bereich einzutreten.";
+$_ADDONLANG['global_desc_system_permission'] = "Sie verfügen nicht über die nötigen Rechte, um diesen Bereich zu betreten.";
 $_ADDONLANG['global_desc_system_auth'] = "Sie sind nicht berechtigt, Änderungen in diesem Bereich zu machen.";
 $_ADDONLANG['global_desc_system_invalid'] = "Das System konnte Ihre Anfrage nicht bearbeiten, da diese ungültig ist.";
-$_ADDONLANG['global_desc_system_invalid_record'] = "Das System konnte Ihre Anfrage nicht bearbeiten, da das Aufzeichnungstyp nicht erlaubt ist.";
+$_ADDONLANG['global_desc_system_invalid_record'] = "Das System konnte Ihre Anfrage nicht bearbeiten, da das Recordtyp nicht erlaubt ist.";
 $_ADDONLANG['global_desc_unauthorized'] = "Das System konnte Ihre Anfrage nicht bearbeiten, da diese nichtautorisiert ist.";
 
 $_ADDONLANG['global_desc_dns_record_edited'] = "Die Änderungen wurden erfolgreich gespeichert.";
 $_ADDONLANG['global_desc_dns_record_added'] = "Neue Aufzeichnung wurde erfolgreich hinzugefügt.";
-$_ADDONLANG['global_desc_dns_record_deleted'] = "Neue Aufzeichnung wurde erfolgreich gelöscht.";
-$_ADDONLANG['global_desc_dns_record_limit'] = "Die maximal erlaubten Aufzeichnungen in dem Bereich ist: ";
-$_ADDONLANG['global_desc_dns_zone_system_limit'] = "Das System kann keine weiteren Bereiche hinzufügen.";
-$_ADDONLANG['global_desc_dns_zone_client_limit'] = "Ihr Konto hat die maximal erlaubten Bereiche erreicht.";
+$_ADDONLANG['global_desc_dns_record_deleted'] = "Neue Record wurde erfolgreich gelöscht.";
+$_ADDONLANG['global_desc_dns_record_limit'] = "Die maximal erlaubten Records in dem Bereich ist: ";
+$_ADDONLANG['global_desc_dns_zone_system_limit'] = "Das System kann keine weiteren Zonen hinzufügen.";
+$_ADDONLANG['global_desc_dns_zone_client_limit'] = "Ihr Konto hat die maximal erlaubten Zonen erreicht.";
 $_ADDONLANG['global_desc_dns_invalid_hostname'] = "Bitte geben Sie einen gültigen Hostnamen ein.";
 $_ADDONLANG['global_desc_dns_invalid_domain'] = "Bitte geben Sie eine gültige Domain ein.";
 $_ADDONLANG['global_desc_dns_reverse_updated'] = "Der Revers-Hostename wurde aktualisiert.";
-$_ADDONLANG['global_desc_dns_zone_exists'] = "Der Bereich ist nicht verfügbar, da sie bereits genutzt wird.";
-$_ADDONLANG['global_desc_dns_zone_created'] = "Neuer Bereich wurde erfolgreich erstellt.";
-$_ADDONLANG['global_desc_dns_zone_unable_delete'] = "Das System konnte den Bereich nicht löschen, da dieser nicht auf dem Nameserver gefunden wurde.";
-$_ADDONLANG['global_desc_dns_zone_deleted'] = "Neuer Bereich erfolgreich gelöscht.";
-$_ADDONLANG['global_desc_dns_zone_imported'] = "Der Import des Bereiches wurde abgeschlossen. Die Aufzeichnungen wurden vom System moderiert.";
+$_ADDONLANG['global_desc_dns_zone_exists'] = "Die Zone ist nicht verfügbar, da sie bereits genutzt wird.";
+$_ADDONLANG['global_desc_dns_zone_created'] = "Neue Zone wurde erfolgreich erstellt.";
+$_ADDONLANG['global_desc_dns_zone_unable_delete'] = "Das System konnte die Zone nicht löschen, da dieser nicht auf dem Nameserver gefunden wurde.";
+$_ADDONLANG['global_desc_dns_zone_deleted'] = "Neue Zone erfolgreich gelöscht.";
+$_ADDONLANG['global_desc_dns_zone_imported'] = "Der Import der Zone wurde abgeschlossen. Die Records wurden vom System moderiert.";
 
 $_ADDONLANG['global_desc_template_applied'] = "Vorlage wurde erfolgreich angewendet.";
 
 // DNS Validation
 $_ADDONLANG['global_validate_dns_service_unavailable'] = "Service ist nicht verfügbar!";	
-$_ADDONLANG['global_validate_dns_zone_not_found'] = "Bereich wurde nicht gefunden. Unfähig diese Aktion durchzuführen.";
-$_ADDONLANG['global_validate_dns_no_records_in_zone'] = "Keine Aufzeichungen in diesem Bereich gefunden.";
+$_ADDONLANG['global_validate_dns_zone_not_found'] = "Zone wurde nicht gefunden. Kann diese Aktion nicht durchführen.";
+$_ADDONLANG['global_validate_dns_no_records_in_zone'] = "Keine Records in dieser Zone gefunden.";
 $_ADDONLANG['global_validate_dns_no_dnssec_for_zone'] = "Keine DNSec-Schlüssel in dieser Zone gefunden.";
 
-$_ADDONLANG['global_validate_dns_record_not_found'] = "Aufzeichnung wurde nicht gefunden.";
-$_ADDONLANG['global_validate_dns_record_collision'] = "Mehrere Aufzeichnungen gefunden, unfähig diesen Vorgang abzuschließen!";
-$_ADDONLANG['global_validate_dns_record_no_priority'] = "Aufzeichnungstyp benötigt eine zahlenmäßige Priorität von Ihnen.";
-$_ADDONLANG['global_validate_dns_record_invalid_priority'] = "Aufzeichnungstyp benötigt eine zahlenmäßige Priorität von Ihnen.";
+$_ADDONLANG['global_validate_dns_record_not_found'] = "Record wurde nicht gefunden.";
+$_ADDONLANG['global_validate_dns_record_collision'] = "Mehrere Records gefunden, kann diesen Vorgang nicht abschließen!";
+$_ADDONLANG['global_validate_dns_record_no_priority'] = "Recordstyp benötigt eine zahlenmäßige Priorität von Ihnen.";
+$_ADDONLANG['global_validate_dns_record_invalid_priority'] = "Recordstyp benötigt eine zahlenmäßige Priorität von Ihnen.";
 
 $_ADDONLANG['global_validate_dns_no_database'] = "Bestätigung nicht möglich. Datenbankverbindung nicht möglich.";
 $_ADDONLANG['global_validate_dns_domain_not_in_name'] = "Das Namenfeld muss den Domainnamen beinhalten.";
-$_ADDONLANG['global_validate_dns_type_empty'] = "Aufzeichnungstyp darf nicht leer sein.";
-$_ADDONLANG['global_validate_dns_invalid_type'] = "Aufzeichnungstyp nicht erkannt.";
+$_ADDONLANG['global_validate_dns_type_empty'] = "Recordstyp darf nicht leer sein.";
+$_ADDONLANG['global_validate_dns_invalid_type'] = "Recordstyp nicht erkannt.";
 $_ADDONLANG['global_validate_dns_invalid_ttl'] = "Der TTL-Wert muss numerisch sein.";
-$_ADDONLANG['global_validate_dns_content_too_long'] = "Der eingegebene Inhaltswert ist zu lang und kann nciht mehr als 4096 Zeichen enthalten.";
+$_ADDONLANG['global_validate_dns_content_too_long'] = "Der eingegebene Inhaltswert ist zu lang und kann nicht mehr als 4096 Zeichen enthalten.";
 
 $_ADDONLANG['global_validate_dns_invalid_ipv4'] = "IPv4-Adressen sind anscheinend nicht gültig.";
 $_ADDONLANG['global_validate_dns_invalid_ipv6'] = "IPv6-Adressen sind anscheinend nicht gültig. IPv4 und IPv6 Bezeichnungen werden nicht unterstützt.";
 
 $_ADDONLANG['global_validate_dns_invalid_not_quoted'] = "Inhalt muss angegeben werden (\").";
 
-$_ADDONLANG['global_validate_dns_invalid_fqhn'] = "Aufzeichnungstyp muss einen gültigen Hostnamen beinhalten, nicht mit einem Punkt (.) beenden.";
-$_ADDONLANG['global_validate_dns_invalid_fqdn'] = "Aufzeichnungstyp muss eine gültige Domain beinhalten, nicht mit einem Punkt (.) beenden.";
+$_ADDONLANG['global_validate_dns_invalid_fqhn'] = "Recordstyp muss einen gültigen Hostnamen beinhalten, nicht mit einem Punkt (.) beenden.";
+$_ADDONLANG['global_validate_dns_invalid_fqdn'] = "Recordstyp muss eine gültige Domain beinhalten, nicht mit einem Punkt (.) beenden.";
 
 $_ADDONLANG['global_validate_dns_invalid_arpa'] = "Revers-Name nicht gültig.";
-$_ADDONLANG['global_validate_dns_not_unique'] = "Ähnliche Aufzeichnung existiert bereits.";
-$_ADDONLANG['global_validate_dns_non_alias_target'] = "Sie können keine NS oder MX Aufzeichnung zu einer CNAME Aufzeichung zuordnen.";
+$_ADDONLANG['global_validate_dns_not_unique'] = "Ähnliche Records existiert bereits.";
+$_ADDONLANG['global_validate_dns_non_alias_target'] = "Sie können keine NS oder MX Record zu einem CNAME Record zuordnen.";
 
 $_ADDONLANG['global_validate_dns_tlsa_parts_missing'] = htmlentities("Eine TLSA Aufzeichnung muss Folgendes enthalten: <usage> <selector> <type> <fingeprint>.");
 $_ADDONLANG['global_validate_dns_tlsa_invalid_0_part'] = "Geben Sie ein: 0 (PKIX-TA), 1 (PKIX-EE), 2 (DANE-TA) oder 3 (DANE-EE) Nutzung-Feld muss bereitgestellt werden.";
@@ -768,26 +768,26 @@ $_ADDONLANG['global_validate_dns_tlsa_invalid_3_part'] = "Ein SHA-256 Fingerabrc
 $_ADDONLANG['global_validate_dns_tlsa_invalid_4_part'] = "Ein SHA-512 Fingerabrcuk mit 128 ASCII hexadezimal Zeichen muss bereitgestellt werden.";
 
 $_ADDONLANG['global_validate_dns_naptr_parts_missing'] = htmlentities("Eine NAPTR Aufzeichnung muss Folgendes enthalten (einschließlich Anführungszeichen und abschließenden Punkt): <order> <preference> \"<flags>\" \"<service>\" \"<regexp>\" replacement.");
-$_ADDONLANG['global_validate_dns_naptr_part_0_invalid'] = "Aufzeichnung Teil 1 muss numerisch sein.";
-$_ADDONLANG['global_validate_dns_naptr_part_1_quote_invalid'] = "Aufzeichnung Teil 2 muss numerisch sein.";
-$_ADDONLANG['global_validate_dns_naptr_part_1_flags_invalid'] = "Aufzeichnung Teil 2 beinhaltet ungültige Zeichen. Dieser Teil darf nur alphanumerische Zeichen enthalten.";
-$_ADDONLANG['global_validate_dns_naptr_part_1_ex_flags_invalid'] = "Aufzeichnung Teil 2 beinhaltet ungültige Zeichen. Nur eins kann zurzeit genutzt werden.";
-$_ADDONLANG['global_validate_dns_naptr_part_2_quote_invalid'] = "Aufzeichnung Teil 3 muss angegeben sein.";
-$_ADDONLANG['global_validate_dns_naptr_part_2_terminal_flag_invalid'] = "EIN SERVICE (Aufzeichnung Teil 3) muss mit FLAGS einschließlich eines Terminal-Flags angegeben werden.";
-$_ADDONLANG['global_validate_dns_naptr_part_2_service_invalid'] = "SERVICE (Aufzeichnung Teil 3) scheint ungültig zu sein.";
-$_ADDONLANG['global_validate_dns_naptr_part_3_delimiter_invalid'] = "Der POSIX Ersatz-regexp (Aufzeichnung Teil 4) ist ungültig. Trennzeichen darf keine: 'i', '\\' oder Zahlen enthalten.";
-$_ADDONLANG['global_validate_dns_naptr_part_3_replacement_invalid'] = "Der POSIX Ersatz-regexp (Aufzeichnung Teil 4) ist ungültig. Es wurden nicht alle nötigen Teile angegeben.";
-$_ADDONLANG['global_validate_dns_naptr_part_3_backref_invalid'] = "Der POSIX Ersatz-regexp (Aufzeichnung Teil 4) ist ungültig. Es kann nur ein Rückverweis  genutzt werden; dieser sollte wie folgt ausssehen: '\\1'.";
-$_ADDONLANG['global_validate_dns_naptr_part_3_flag_invalid'] = "Der POSIX regexp (Aufzeichnung Teil 5) ist ungültig. Eventuell enthält diese ein 'i' oder gar keinen Wert.";
-$_ADDONLANG['global_validate_dns_naptr_part_4_empty_invalid'] = "Aufzeichnung Teil 5 ist ungültig und muss einen Datensatzzeiger oder eine Einzelpunkt enthalten.";
-$_ADDONLANG['global_validate_dns_naptr_part_4_sim_invalid'] = "Die REGEXP und REPLACEMENT Variablen (Aufzeichnung Teil 5) können nicht gleichzeitig genutzt werden.";
-$_ADDONLANG['global_validate_dns_naptr_part_4_replacement_invalid'] = "ERSATZ-Variable (Aufzeichnung Teil 5) muss entweder einen '.' oder eine gültige Domain enthalten.";
+$_ADDONLANG['global_validate_dns_naptr_part_0_invalid'] = "Record Teil 1 muss numerisch sein.";
+$_ADDONLANG['global_validate_dns_naptr_part_1_quote_invalid'] = "Record Teil 2 muss numerisch sein.";
+$_ADDONLANG['global_validate_dns_naptr_part_1_flags_invalid'] = "Record Teil 2 beinhaltet ungültige Zeichen. Dieser Teil darf nur alphanumerische Zeichen enthalten.";
+$_ADDONLANG['global_validate_dns_naptr_part_1_ex_flags_invalid'] = "Record Teil 2 beinhaltet ungültige Zeichen. Nur eins kann zurzeit genutzt werden.";
+$_ADDONLANG['global_validate_dns_naptr_part_2_quote_invalid'] = "Record Teil 3 muss angegeben sein.";
+$_ADDONLANG['global_validate_dns_naptr_part_2_terminal_flag_invalid'] = "EIN SERVICE (Record Teil 3) muss mit FLAGS einschließlich eines Terminal-Flags angegeben werden.";
+$_ADDONLANG['global_validate_dns_naptr_part_2_service_invalid'] = "SERVICE (Record Teil 3) scheint ungültig zu sein.";
+$_ADDONLANG['global_validate_dns_naptr_part_3_delimiter_invalid'] = "Der POSIX Ersatz-regexp (Record Teil 4) ist ungültig. Trennzeichen darf keine: 'i', '\\' oder Zahlen enthalten.";
+$_ADDONLANG['global_validate_dns_naptr_part_3_replacement_invalid'] = "Der POSIX Ersatz-regexp (Record Teil 4) ist ungültig. Es wurden nicht alle nötigen Teile angegeben.";
+$_ADDONLANG['global_validate_dns_naptr_part_3_backref_invalid'] = "Der POSIX Ersatz-regexp (Record Teil 4) ist ungültig. Es kann nur ein Rückverweis  genutzt werden; dieser sollte wie folgt ausssehen: '\\1'.";
+$_ADDONLANG['global_validate_dns_naptr_part_3_flag_invalid'] = "Der POSIX regexp (Record Teil 5) ist ungültig. Eventuell enthält diese ein 'i' oder gar keinen Wert.";
+$_ADDONLANG['global_validate_dns_naptr_part_4_empty_invalid'] = "Record Teil 5 ist ungültig und muss einen Datensatzzeiger oder eine Einzelpunkt enthalten.";
+$_ADDONLANG['global_validate_dns_naptr_part_4_sim_invalid'] = "Die REGEXP und REPLACEMENT Variablen (Record Teil 5) können nicht gleichzeitig genutzt werden.";
+$_ADDONLANG['global_validate_dns_naptr_part_4_replacement_invalid'] = "ERSATZ-Variable (Record Teil 5) muss entweder einen '.' oder eine gültige Domain enthalten.";
 
-$_ADDONLANG['global_validate_dns_rp_parts_missing'] = htmlentities("RP Aufzeichnungen müssen enthalten: <mailbox name> <more info pointer>");
+$_ADDONLANG['global_validate_dns_rp_parts_missing'] = htmlentities("RP Record müssen enthalten: <mailbox name> <more info pointer>");
 $_ADDONLANG['global_validate_dns_rp_part_0_invalid'] = "Der Mailbox-Name muss eine E-Mail-Adresse mit einem (@) oder einem Ersatzpunkt (.) enthalten.";
 $_ADDONLANG['global_validate_dns_rp_part_1_invalid'] = "Der Weitere-Informationen Zeiger muss eine gültige Domain enthalten.";
 
-$_ADDONLANG['global_validate_dns_soa_parts_missing'] = htmlentities("Die SOA Aufzeichnung muss enthalten: <primary-ns> <hostmaster> <serial> <refresh> <retry> <expire> <default_ttl>");
+$_ADDONLANG['global_validate_dns_soa_parts_missing'] = htmlentities("Die SOA Record muss enthalten: <primary-ns> <hostmaster> <serial> <refresh> <retry> <expire> <default_ttl>");
 $_ADDONLANG['global_validate_dns_soa_part_0_invalid'] = "Die primäre Nameserver-Domain ist nicht gültig.";
 $_ADDONLANG['global_validate_dns_soa_part_1_invalid'] = "Die Hostname-E-Mail-Adresse ist nicht gültig.";
 $_ADDONLANG['global_validate_dns_soa_part_2_invalid'] = "Serial (Teil 3) muss nummerisch sein.";
@@ -796,14 +796,14 @@ $_ADDONLANG['global_validate_dns_soa_part_4_invalid'] = "Wiederholung (Teil 5) m
 $_ADDONLANG['global_validate_dns_soa_part_5_invalid'] = "Ablauf (Teil 6) muss nummerisch sein.";
 $_ADDONLANG['global_validate_dns_soa_part_6_invalid'] = "Standard (Teil 7) muss nummerisch sein.";
 
-$_ADDONLANG['global_validate_dns_sshfp_parts_missing'] = htmlentities("Eine SSHFP Aufzeichnung muss Folgendes enhalten: <algorithm> <fp-type> <fingeprint>");
+$_ADDONLANG['global_validate_dns_sshfp_parts_missing'] = htmlentities("Eine SSHFP Record muss Folgendes enhalten: <algorithm> <fp-type> <fingeprint>");
 $_ADDONLANG['global_validate_dns_sshfp_invalid_0_part'] = "Entweder ein: 1 (RSA), 2 (DSA) oder 3 (ECDSA) Algorithmus muss bereitgestellt werden.";
 $_ADDONLANG['global_validate_dns_sshfp_invalid_1_part'] = "Entweder: 1 (SHA-1) oder 2 (SHA-256) als FP-Typ muss bereitgestellt werden.";
 $_ADDONLANG['global_validate_dns_sshfp_invalid_2_part'] = "Ein SHA-1 Fingerabrcuk mit 40 ASCII hexadezimal Zeichen muss bereitgestellt werden.";
 $_ADDONLANG['global_validate_dns_sshfp_invalid_3_part'] = "Ein SHA-256 Fingerabrcuk mit 64 ASCII hexadezimal Zeichen muss bereitgestellt werden.";
 
 $_ADDONLANG['global_validate_dns_srv_missing_priority'] = "Eine Priorität muss bereitsgestellt werden.";
-$_ADDONLANG['global_validate_dns_srv_parts_missing'] = htmlentities("Die SRV Aufzeichnung muss Folgendes enthalten: <weight> <port> <service>");
+$_ADDONLANG['global_validate_dns_srv_parts_missing'] = htmlentities("Die SRV Record muss Folgendes enthalten: <weight> <port> <service>");
 $_ADDONLANG['global_validate_dns_srv_part_0_invalid'] = "Gewicht (Teil 1) muss nummerisch sein.";
 $_ADDONLANG['global_validate_dns_srv_part_1_invalid'] = "Port (Teil 2) muss nummerisch sein.";
 $_ADDONLANG['global_validate_dns_srv_part_2_invalid'] =  "Eine SRV Aufzeichnung muss eine gültige Domain als Service enthalten.";
