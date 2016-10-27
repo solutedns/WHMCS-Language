@@ -33,12 +33,12 @@ $_ADDONLANG['client_records'] = "Registros";
 $_ADDONLANG['client_dnsseckeys'] = "Claves DNSsc";
 $_ADDONLANG['client_dsrecords'] = "Registros DS";
 $_ADDONLANG['client_deleterecord'] = "Borrar registro";
-$_ADDONLANG['client_srvassistant'] = "Asistente SRV";
 $_ADDONLANG['client_deletezone'] = "Borrar zona";
 
 // DNS Management
 $_ADDONLANG['client_addrecord'] = "Añadir registro";
 $_ADDONLANG['client_srvassistant'] = "Asistente SRV";
+$_ADDONLANG['client_tlsaassistant'] = "Asistente TLSA";
 
 $_ADDONLANG['client_name'] = "Nombre";
 $_ADDONLANG['client_type'] = "Tipo";
@@ -226,10 +226,12 @@ $_ADDONLANG['admin_accessibility_option_hideassist'] = "Ocultar cliente de asist
 $_ADDONLANG['admin_accessibility_option_dnspagination'] = "Paginación DNS";
 
 $_ADDONLANG['admin_accessibility_option_clientzones'] = "Habilitar zonas de cliente";
+$_ADDONLANG['admin_accessibility_option_client_zones_subdomains'] = "Allow Subdomain Zones";
 $_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Habilitar plantillas de cliente";
 $_ADDONLANG['admin_accessibility_option_clienthealth'] = "Habilitar estado de salud";
 $_ADDONLANG['admin_accessibility_option_clientreverse'] = "Gestión inversa";
 $_ADDONLANG['admin_accessibility_option_zonelimit'] = "Límite de zona";
+$_ADDONLANG['admin_accessibility_option_urlrewrite'] = "Rewrite client area URL";
 
 $_ADDONLANG['admin_accessibility_option_adminreverse'] = "Habilitar inversa";
 $_ADDONLANG['admin_accessibility_option_adminhealth'] = "Icono de salud";
@@ -240,13 +242,15 @@ $_ADDONLANG['admin_accessibility_desc_hidesoa'] = "Ocultar el registro SOA a usu
 $_ADDONLANG['admin_accessibility_desc_disablens'] = "Cuando estén marcados, los registros de nombre del servidor estarán deshabilitados para los usuarios.";
 $_ADDONLANG['admin_accessibility_desc_presetttl'] = "Usar un menú desplegable TTL previamente establecido en lugar de un cuadro de texto.";
 $_ADDONLANG['admin_accessibility_desc_hideassist'] = "Marque esta casilla de verificación para ocultar este asistente DNS a sus clientes.";
-$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Cambiar a paginaciones si la zona excede los registros (0=siempre)";
+$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Cambiar a paginaciones si la zona excede los registros (0 = ninguna)";
+$_ADDONLANG['admin_accessibility_desc_urlrewrite'] = "Rewrite the client area URL, requires .htaccess customizations. Leave empty to disable. See: <a class=\"text-info\" href=\"http://www.solutedns.com/documentation/customized-url\" target=\"_blank\">Custom URL</a>";
 
 $_ADDONLANG['admin_accessibility_desc_clientzones'] = "Seleccionar para habilitar gestión de zona para clientes.";
+$_ADDONLANG['admin_accessibility_desc_client_zones_subdomains'] = "Allow clients to add subdomains as new zone.";
 $_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Seleccionar para habilitar plantilla por defecto para clientes.";
 $_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Seleccionar para habilitar el icono del estado de salud en la zona de cliente.";
 $_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Marcar para permitir a los clientes gestionar los nombres de servidor inversos para direcciones IP asignadas.";
-$_ADDONLANG['admin_accessibility_desc_zonelimit'] = "Limitar las zonas máximas permitiddas para los clientes (0=ilimitadas=, -1=ninguna)";
+$_ADDONLANG['admin_accessibility_desc_zonelimit'] = "Limitar las zonas máximas permitiddas para los clientes (0 = ilimitadas=, -1 = ninguna)";
 
 $_ADDONLANG['admin_accessibility_desc_adminreverse'] = "Marcar para habilitar zonas inversas en la zona de administración.";
 $_ADDONLANG['admin_accessibility_desc_adminhealth'] = "Mostrar el icono de salud en la vista general del dominio de administrador";
@@ -377,6 +381,10 @@ $_ADDONLANG['admin_manage_priority'] = "Prioridad";
 $_ADDONLANG['admin_manage_weight'] = "Peso";
 $_ADDONLANG['admin_manage_target'] = "Objetivo";
 $_ADDONLANG['admin_manage_port'] = "Puerto";
+$_ADDONLANG['admin_manage_usage'] = "Uso";
+$_ADDONLANG['admin_manage_selector'] = "Selector";
+$_ADDONLANG['admin_manage_matchingtype'] = "Tipo de concordancia";
+$_ADDONLANG['admin_manage_certificate'] = "Certificado";
 
 $_ADDONLANG['admin_manage_dnssec_addnewkey'] = "Añadir nueva clave DNSsec";
 $_ADDONLANG['admin_manage_dnssec_flag'] = "Bandeara";
@@ -393,6 +401,7 @@ $_ADDONLANG['admin_manage_health_noissues'] = "No se conocen errores de salud.";
 
 $_ADDONLANG['admin_manage_records_addrecord'] = "Añadir registro";
 $_ADDONLANG['admin_manage_records_srvassist'] = "Asistente SRV";
+$_ADDONLANG['admin_manage_records_tlsaassist'] = "Asistente TLSA";
 
 $_ADDONLANG['admin_manage_records_manage'] = "Gestionar";
 $_ADDONLANG['admin_manage_records_applytemplate'] = "Aplicar plantilla";
@@ -529,11 +538,13 @@ $_ADDONLANG['admin_records_option_refresh'] = "Refrescar";
 $_ADDONLANG['admin_records_option_retry'] = "Volver a intentar";
 $_ADDONLANG['admin_records_option_expire'] = "Caducar";
 $_ADDONLANG['admin_records_option_ttl'] = "Mínimo TTL";
+$_ADDONLANG['admin_records_option_customprimary'] = "Allow custom primary";
 
 $_ADDONLANG['admin_records_option_recordlimit'] = "Límite de registro";
 
 $_ADDONLANG['admin_records_desc_hostmaster'] = "Añadir &lt;domain&gt; para usar el dominio referente como maestro del servidor";
 $_ADDONLANG['admin_records_desc_serial'] = "Deje esto por defecto si no está seguro de lo que hace!";
+$_ADDONLANG['admin_records_desc_customprimary'] = "Do not overwrite the primary nameserver SOA value with the cluster default.";
 
 $_ADDONLANG['admin_records_desc_recordlimit'] = "Limitar el máximo de registros permitidos en una zona (0=ilimitado).";
 
@@ -807,6 +818,25 @@ $_ADDONLANG['global_validate_dns_srv_part_2_invalid'] =  "Un registro SRV debe c
 $_ADDONLANG['global_validate_dns_hinfo_invalid'] = "El contenido del campo HINFI contiene un valor inválido.";
 
 $_ADDONLANG['global_validate_template_tag'] = "Por favor asegúrese si utiliza la etiqueta &lt;default-ipv4&gt; o &lt;default-ipv6&gt; que la dirección IP ha sido definida en los ajustes de la plantilla.";
+
+// Global Assistant
+$_ADDONLANG['global_tlsa_pkixta'] = "PKIX-TA: CA Constraint";
+$_ADDONLANG['global_tlsa_pkixee'] = "PKIX-EE: Service Certificate Constraint";
+$_ADDONLANG['global_tlsa_daneta'] = "DANE-TA: Trust Anchor Assertion";
+$_ADDONLANG['global_tlsa_daneee'] = "DANE-EE: Domain Issued Certificate";
+$_ADDONLANG['global_tlsa_fullcert'] = "Use full certificate";
+$_ADDONLANG['global_tlsa_subjectpublickey'] = "Use subject public key";
+$_ADDONLANG['global_tlsa_256hash'] = "SHA-256 Hash";
+$_ADDONLANG['global_tlsa_512hash'] = "SHA-512 Hash";
+
+$_ADDONLANG['global_tlsa_pkixta_info'] = "For a CA certificate or public key of this certificate that requires to be in the certification path and must pass PKIX validation (Public-Key Infrastructure).";
+$_ADDONLANG['global_tlsa_pkixee_info'] = "For a certificate or public key of this certificate that requires to match the server certificate and must pass PKIX validation (Public-Key Infrastructure).";
+$_ADDONLANG['global_tlsa_daneta_info'] = "For a CA certificate or public key of this certificate that requires to be in the certification path. The record is considered to be the trust anchor.";
+$_ADDONLANG['global_tlsa_daneee_info'] = "For a certificate or public key of this certificate that requires to match the server certificate.";
+$_ADDONLANG['global_tlsa_certificate_info'] = "Enter PEM format X.509 certificate.";
+
+$_ADDONLANG['global_tlsa_cert_expired_title'] = "Certificate Invalid";
+$_ADDONLANG['global_tlsa_cert_expired_desc'] = "The certificate you have entered has expired or is invalid and cannot be used.";
 
 // Global Messages
 $_ADDONLANG['global_msg_changes_saved_title'] = "Se han guardado los cambios!";

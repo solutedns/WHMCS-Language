@@ -33,12 +33,12 @@ $_ADDONLANG['client_records'] = "Records";
 $_ADDONLANG['client_dnsseckeys'] = "DNSsec Keys";
 $_ADDONLANG['client_dsrecords'] = "DS Records";
 $_ADDONLANG['client_deleterecord'] = "Delete Record";
-$_ADDONLANG['client_srvassistant'] = "SRV Assistant";
 $_ADDONLANG['client_deletezone'] = "Delete Zone";
 
 // DNS Management
 $_ADDONLANG['client_addrecord'] = "Add Record";
 $_ADDONLANG['client_srvassistant'] = "SRV Assistant";
+$_ADDONLANG['client_tlsaassistant'] = "TLSA Assistant";
 
 $_ADDONLANG['client_name'] = "Name";
 $_ADDONLANG['client_type'] = "Type";
@@ -224,8 +224,10 @@ $_ADDONLANG['admin_accessibility_option_disablens'] = "Disable NS Record";
 $_ADDONLANG['admin_accessibility_option_presetttl'] = "Use Pre-set TTL field";
 $_ADDONLANG['admin_accessibility_option_hideassist'] = "Hide Client DNS Assistant";
 $_ADDONLANG['admin_accessibility_option_dnspagination'] = "DNS Pagination";
+$_ADDONLANG['admin_accessibility_option_urlrewrite'] = "Rewrite client area URL";
 
 $_ADDONLANG['admin_accessibility_option_clientzones'] = "Enable Client Zones";
+$_ADDONLANG['admin_accessibility_option_client_zones_subdomains'] = "Allow Subdomain Zones";
 $_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Enable Client Template";
 $_ADDONLANG['admin_accessibility_option_clienthealth'] = "Enable Health Status";
 $_ADDONLANG['admin_accessibility_option_clientreverse'] = "Reverse Management";
@@ -240,9 +242,11 @@ $_ADDONLANG['admin_accessibility_desc_hidesoa'] = "Hide the SOA record for users
 $_ADDONLANG['admin_accessibility_desc_disablens'] = "When ticked, the nameserver records will be disabled for users.";
 $_ADDONLANG['admin_accessibility_desc_presetttl'] = "Use a pre-set TTL dropdown menu instead of a textbox.";
 $_ADDONLANG['admin_accessibility_desc_hideassist'] = "Tick this checkbox to hide the DNS wizard for your clients.";
-$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Switch to paginations if zone exeeds records. (0 = always)";
+$_ADDONLANG['admin_accessibility_desc_dnspagination'] = "Switch to paginations if zone exeeds records. (0 = none)";
+$_ADDONLANG['admin_accessibility_desc_urlrewrite'] = "Rewrite the client area URL, requires .htaccess customizations. Leave empty to disable. See: <a class=\"text-info\" href=\"http://www.solutedns.com/documentation/customized-url\" target=\"_blank\">Custom URL</a>";
 
 $_ADDONLANG['admin_accessibility_desc_clientzones'] = "Select to enable zone management for clients.";
+$_ADDONLANG['admin_accessibility_desc_client_zones_subdomains'] = "Allow clients to add subdomains as new zone.";
 $_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Select to enable the default template for clients.";
 $_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Select to enable the health status icon in the client area.";
 $_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Tick to allow clients to manage reverse hostnames for assigned IP adresses.";
@@ -378,6 +382,10 @@ $_ADDONLANG['admin_manage_priority'] = "Priority";
 $_ADDONLANG['admin_manage_weight'] = "Weight";
 $_ADDONLANG['admin_manage_target'] = "Target";
 $_ADDONLANG['admin_manage_port'] = "Port";
+$_ADDONLANG['admin_manage_usage'] = "Usage";
+$_ADDONLANG['admin_manage_selector'] = "Selector";
+$_ADDONLANG['admin_manage_matchingtype'] = "Matching Type";
+$_ADDONLANG['admin_manage_certificate'] = "Certificate";
 
 $_ADDONLANG['admin_manage_dnssec_addnewkey'] = "Add new DNSsec key";
 $_ADDONLANG['admin_manage_dnssec_flag'] = "Flag";
@@ -394,6 +402,7 @@ $_ADDONLANG['admin_manage_health_noissues'] = "No known health issues.";
 
 $_ADDONLANG['admin_manage_records_addrecord'] = "Add Record";
 $_ADDONLANG['admin_manage_records_srvassist'] = "SRV Assistant";
+$_ADDONLANG['admin_manage_records_tlsaassist'] = "TLSA Assistant";
 
 $_ADDONLANG['admin_manage_records_manage'] = "Manage";
 $_ADDONLANG['admin_manage_records_applytemplate'] = "Apply Template";
@@ -402,7 +411,6 @@ $_ADDONLANG['admin_manage_records_importzone'] = "Import Zone";
 $_ADDONLANG['admin_manage_records_exportzone'] = "Export Zone";
 $_ADDONLANG['admin_manage_records_deleterecord'] = "Delete Record";
 $_ADDONLANG['admin_manage_records_deleteselected'] = "Delete Selected";
-
 
 $_ADDONLANG['admin_manage_text_deleterecord'] = "Are you sure you want to delete this record?";
 $_ADDONLANG['admin_manage_text_importzone'] = "Enter a zone file to import. Imported records are being moderated by the system.";
@@ -532,11 +540,13 @@ $_ADDONLANG['admin_records_option_refresh'] = "Refresh";
 $_ADDONLANG['admin_records_option_retry'] = "Retry";
 $_ADDONLANG['admin_records_option_expire'] = "Expire";
 $_ADDONLANG['admin_records_option_ttl'] = "Minimum TTL";
+$_ADDONLANG['admin_records_option_customprimary'] = "Allow custom primary";
 
 $_ADDONLANG['admin_records_option_recordlimit'] = "Record Limit";
 
 $_ADDONLANG['admin_records_desc_hostmaster'] = "Add &lt;domain&gt; to use the concerning domain as hostmaster";
 $_ADDONLANG['admin_records_desc_serial'] = "Leave this in default if you are not sure what this does!";
+$_ADDONLANG['admin_records_desc_customprimary'] = "Do not overwrite the primary nameserver SOA value with the cluster default.";
 
 $_ADDONLANG['admin_records_desc_recordlimit'] = "Limit the maximum records allowed in a zone (0 = unlimited).";
 
@@ -811,6 +821,25 @@ $_ADDONLANG['global_validate_dns_srv_part_2_invalid'] =  "A SRV record must cont
 $_ADDONLANG['global_validate_dns_hinfo_invalid'] = "The HINFO content field contains an invalid value.";
 
 $_ADDONLANG['global_validate_template_tag'] = "Please make sure if you used the &lt;default-ipv4&gt; or &lt;default-ipv6&gt; tag, the default IP has been defined in the template settings.";
+
+// Global Assistant
+$_ADDONLANG['global_tlsa_pkixta'] = "PKIX-TA: CA Constraint";
+$_ADDONLANG['global_tlsa_pkixee'] = "PKIX-EE: Service Certificate Constraint";
+$_ADDONLANG['global_tlsa_daneta'] = "DANE-TA: Trust Anchor Assertion";
+$_ADDONLANG['global_tlsa_daneee'] = "DANE-EE: Domain Issued Certificate";
+$_ADDONLANG['global_tlsa_fullcert'] = "Use full certificate";
+$_ADDONLANG['global_tlsa_subjectpublickey'] = "Use subject public key";
+$_ADDONLANG['global_tlsa_256hash'] = "SHA-256 Hash";
+$_ADDONLANG['global_tlsa_512hash'] = "SHA-512 Hash";
+
+$_ADDONLANG['global_tlsa_pkixta_info'] = "For a CA certificate or public key of this certificate that requires to be in the certification path and must pass PKIX validation (Public-Key Infrastructure).";
+$_ADDONLANG['global_tlsa_pkixee_info'] = "For a certificate or public key of this certificate that requires to match the server certificate and must pass PKIX validation (Public-Key Infrastructure).";
+$_ADDONLANG['global_tlsa_daneta_info'] = "For a CA certificate or public key of this certificate that requires to be in the certification path. The record is considered to be the trust anchor.";
+$_ADDONLANG['global_tlsa_daneee_info'] = "For a certificate or public key of this certificate that requires to match the server certificate.";
+$_ADDONLANG['global_tlsa_certificate_info'] = "Enter PEM format X.509 certificate.";
+
+$_ADDONLANG['global_tlsa_cert_expired_title'] = "Certificate Invalid";
+$_ADDONLANG['global_tlsa_cert_expired_desc'] = "The certificate you have entered has expired or is invalid and cannot be used.";
 
 // Global Messages
 $_ADDONLANG['global_msg_changes_saved_title'] = "Changes have been saved!";
