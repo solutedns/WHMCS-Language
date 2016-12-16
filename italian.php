@@ -7,9 +7,9 @@
 Language file:			Italian
 Created by:				SoluteDNS
 
-Version:				0.2.5
-Date:					01-08-2016
-Distribution Package:	16003
+Version:				0.2.7
+Date:					16-12-2016
+Distribution Package:	16005
 
 Copyright (C) NetDistrict 2016
 All Rights Reserved
@@ -62,6 +62,8 @@ $_ADDONLANG['client_weight'] = "Peso";
 $_ADDONLANG['client_target'] = "Target";
 $_ADDONLANG['client_port'] = "Porta";
 
+$_ADDONLANG['client_actioncompleted'] = "Azione Completata";
+
 // Zone Management
 $_ADDONLANG['client_addnewzone'] = "Aggiungi nuova zona";
 $_ADDONLANG['client_addupto'] = "Puoi aggiungere fino a";
@@ -77,6 +79,11 @@ $_ADDONLANG['client_delete'] = "Elimina";
 $_ADDONLANG['client_cancel'] = "Annulla";
 $_ADDONLANG['client_back'] = "Indietro";
 $_ADDONLANG['client_activate'] = "Attiva";
+
+$_ADDONLANG['client_enable'] = "Enable";
+$_ADDONLANG['client_disable'] = "Disable";
+$_ADDONLANG['client_enable'] = "Enabled";
+$_ADDONLANG['client_disable'] = "Disabled";
 
 // Text
 $_ADDONLANG['client_text_deleterecord'] = "Sei sicuro di voler eliminare questo record?";
@@ -230,6 +237,7 @@ $_ADDONLANG['admin_accessibility_option_urlrewrite'] = "Rewrite client area URL"
 
 $_ADDONLANG['admin_accessibility_option_clientzones'] = "Abilita Zona Cliente";
 $_ADDONLANG['admin_accessibility_option_client_zones_subdomains'] = "Allow Subdomain Zones";
+$_ADDONLANG['admin_accessibility_option_client_zones_dnssec'] = "Allow DNSsec control";
 $_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Abilita Template Cliente";
 $_ADDONLANG['admin_accessibility_option_clienthealth'] = "Abilita Stato di Salute";
 $_ADDONLANG['admin_accessibility_option_clientreverse'] = "Gestione Inversi";
@@ -249,6 +257,7 @@ $_ADDONLANG['admin_accessibility_desc_urlrewrite'] = "Rewrite the client area UR
 
 $_ADDONLANG['admin_accessibility_desc_clientzones'] = "Seleziona per abilitare la gestione di zona per i clienti.";
 $_ADDONLANG['admin_accessibility_desc_client_zones_subdomains'] = "Allow clients to add subdomains as new zone.";
+$_ADDONLANG['admin_accessibility_desc_client_zones_dnssec'] = "Allow clients to enable or disable DNSsec for a zone.";
 $_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Seleziona per abilitare il template di default per i clienti.";
 $_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Seleziona per abilitare l'icona dello stato di salute nell'zona clienti.";
 $_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Spunta per abilitare i clienti a gestire i nomi host inversi per indirizzi IP assegnati.";

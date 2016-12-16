@@ -7,9 +7,9 @@
 Language file:			Spanish
 Created by:				SoluteDNS
 
-Version:				0.2.5
-Date:					01-08-2016
-Distribution Package:	16003
+Version:				0.2.7
+Date:					16-12-2016
+Distribution Package:	16005
 
 Copyright (C) NetDistrict 2016
 All Rights Reserved
@@ -60,6 +60,8 @@ $_ADDONLANG['client_weight'] = "Peso";
 $_ADDONLANG['client_target'] = "Objetivo";
 $_ADDONLANG['client_port'] = "Puerto";
 
+$_ADDONLANG['client_actioncompleted'] = "Acción completada";
+
 // Zone Management
 $_ADDONLANG['client_addnewzone'] = "Añadir nueva zona";
 $_ADDONLANG['client_addupto'] = "Puede añadir hasta";
@@ -75,6 +77,11 @@ $_ADDONLANG['client_delete'] = "Borrar";
 $_ADDONLANG['client_cancel'] = "Cancelar";
 $_ADDONLANG['client_back'] = "Volver";
 $_ADDONLANG['client_activate'] = "Activar";
+
+$_ADDONLANG['client_enable'] = "Enable";
+$_ADDONLANG['client_disable'] = "Disable";
+$_ADDONLANG['client_enable'] = "Enabled";
+$_ADDONLANG['client_disable'] = "Disabled";
 
 // Text
 $_ADDONLANG['client_text_deleterecord'] = "Está seguro de que desea borrar este registro?";
@@ -224,14 +231,15 @@ $_ADDONLANG['admin_accessibility_option_disablens'] = "Deshabilitar registro NS"
 $_ADDONLANG['admin_accessibility_option_presetttl'] = "Usar campo TTL previamente establecido";
 $_ADDONLANG['admin_accessibility_option_hideassist'] = "Ocultar cliente de asistente DNS";
 $_ADDONLANG['admin_accessibility_option_dnspagination'] = "Paginación DNS";
+$_ADDONLANG['admin_accessibility_option_urlrewrite'] = "Rewrite client area URL";
 
 $_ADDONLANG['admin_accessibility_option_clientzones'] = "Habilitar zonas de cliente";
 $_ADDONLANG['admin_accessibility_option_client_zones_subdomains'] = "Allow Subdomain Zones";
+$_ADDONLANG['admin_accessibility_option_client_zones_dnssec'] = "Allow DNSsec control";
 $_ADDONLANG['admin_accessibility_option_clienttemplate'] = "Habilitar plantillas de cliente";
 $_ADDONLANG['admin_accessibility_option_clienthealth'] = "Habilitar estado de salud";
 $_ADDONLANG['admin_accessibility_option_clientreverse'] = "Gestión inversa";
 $_ADDONLANG['admin_accessibility_option_zonelimit'] = "Límite de zona";
-$_ADDONLANG['admin_accessibility_option_urlrewrite'] = "Rewrite client area URL";
 
 $_ADDONLANG['admin_accessibility_option_adminreverse'] = "Habilitar inversa";
 $_ADDONLANG['admin_accessibility_option_adminhealth'] = "Icono de salud";
@@ -247,6 +255,7 @@ $_ADDONLANG['admin_accessibility_desc_urlrewrite'] = "Rewrite the client area UR
 
 $_ADDONLANG['admin_accessibility_desc_clientzones'] = "Seleccionar para habilitar gestión de zona para clientes.";
 $_ADDONLANG['admin_accessibility_desc_client_zones_subdomains'] = "Allow clients to add subdomains as new zone.";
+$_ADDONLANG['admin_accessibility_desc_client_zones_dnssec'] = "Allow clients to enable or disable DNSsec for a zone.";
 $_ADDONLANG['admin_accessibility_desc_clienttemplate'] = "Seleccionar para habilitar plantilla por defecto para clientes.";
 $_ADDONLANG['admin_accessibility_desc_clienthealth'] = "Seleccionar para habilitar el icono del estado de salud en la zona de cliente.";
 $_ADDONLANG['admin_accessibility_desc_clientreverse'] = "Marcar para permitir a los clientes gestionar los nombres de servidor inversos para direcciones IP asignadas.";
