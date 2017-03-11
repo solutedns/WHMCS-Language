@@ -219,6 +219,7 @@ $_ADDONLANG['admin_terminated'] = "Terminato";
 $_ADDONLANG['admin_expired'] = "Scaduto";
 $_ADDONLANG['admin_suspended'] = "Sospeso";
 $_ADDONLANG['admin_fraud'] = "Frode";
+$_ADDONLANG['admin_transferredaway'] = "Transferred Away";
 
 // Accessibility
 $_ADDONLANG['admin_accessibility_title_accessibility'] = "Accessibilità";
